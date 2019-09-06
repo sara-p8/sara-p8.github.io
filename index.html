@@ -1,99 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <title>Sara Papa | UX/UI Designer Portfolio</title>
-     <!-- Reset -->
-     <link rel="stylesheet" href="styles/reset.css">
-     <!-- Custom Styles -->
-     <link rel="stylesheet" href="styles/main.css">
+    <title>Sara Papa | UX/UI Designer Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Reset -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    /> -->
+    <!-- Font Awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="container">
-      <header>
-        <nav class="navigation-bar">
-          <a href="/index.html"><img class="logo" src="/images/Logo-colored.png" alt="Sara Papa Logo"></a>
-          <a href="#">Home</a>
-          <a href="/work">Work</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </nav>
-      </header>
-    </div>
-    <main>
-      <div class="container-2">
-        <img src="/images/lineart-la.svg" alt="Hero Image">
-          <section class="introduction">
-            <h1><strong>Hi there! I'm Sara.</strong></h1>
-            <h2>A <strong>UX/UI designer</strong> based in sunny <strong>Los Angeles, CA</strong>.</h2>
-            <p>I'm passionate about creating purposeful and delightful experiences that bring everyone
-            together</p>
-            <a href="/contact.html">CONTACT</a>
-            <a href="/about.html">READ MORE</a>
-          </section>
-          <hr>
-            <section class="work">
-              <h1>Case Studies</h1>
-              <a href="/project.html"><img src="/images/honeycomb.png" alt="Honeycomb Web App"></a>
-              <h3>Honeycomb</h3>
-              <p>A cloud storage service that offers a bright and secure space to allow individuals and
-              their teams to find inspiration, create projects and collaborate without any
-              distractions</p>
-              <a href="/project.html">View Full Case Study</a>
-              <a href="/work.html">VIEW ALL CASE STUDIES</a>
-            </section>
-            <hr>
-              <section class="process">
-                <img src="/images/designprocess.png" alt="My design process">
-                <table>
-                  <tr>
-                    <td><h3>Research</h3></td>
-                    <td><h3>Design</h3></td>
-                  </tr>
-                  <tr>
-                    <td>User Interviews & Survey, Competitive Analysis, Card Sorting</td>
-                    <td>Branding & Identity, Sketching, Wireframing, Mockups, Basic Frontend</td>
-                  </tr>
-                  <tr>
-                    <td><h3>Analysis</h3></td>
-                    <td><h3>Testing</h3></td>
-                  </tr>
-                  <tr>
-                    <td>User Stories, User Flows, User Personas, Sitemap, Content Strategy</td>
-                    <td>Interactive prototypes, User Testing, Script Development, Refinement</td>
-                  </tr>
-                </table>
-              </section>
-            <hr>
-              <section class="tools">
-                <h1>Tools I Use</h1>
-                  <img src="/images/Figma.png" alt="Figma">
-                  <img src="/images/Sketch.png" alt="Sketch">
-                  <img src="/images/AdobeCC.png" alt="Adobe CC">
-                  <img src="/images/inVision.png" alt="inVision">
-                  <img src="/images/Whimsical.png" alt="Whimsical">
-              </section>
-            <hr>
-              <section class="contact">
-                <h1>Let's talk!</h1>
-                <p>Let's chat about how we can create steallar user experiences, or anything and everything
-                  about UX over a cup of coffee.</p>
-                <a href="/contact.html">CONTACT</a>
-                <a href="https://drive.google.com/open?id=1VtnsMHQYZG0BQMnKRFiVQVcgBlJMx3O7" target="_blank">DOWNLOAD RESUME</a>
-            </section>
-        </div>
-        </main>
-        <footer>
-          <div class="footer">
-            <section class="footer">
-              <a href="https://github.com/sara-p8"><img src="/images/Github.svg" alt="Github Icon"></a>
-              <a href="mailto:sarapapa308@gmail.com"><img src="/images/Gmail.svg" alt="Gmail Icon"></a>
-              <a href="https://linkedin.com/in/p-sara"><img src="/images/Linkedin.svg" alt="Linkedin Icon"></a>
-              <a href="https://twitter.com/ux_sara"><img src="/images/Twitter.svg" alt="Twitter Icon"></a>
-            </section>
-            <section class="copyright">
-              <p>© Sara Papa 2019</p>
-            </section>
+    <header>
+      <div class="navigation-container">
+        <nav id="navigation-bar">
+          <a href="./index.html"
+            ><img class="logo" src="./images/Logo-colored.png"
+          /></a>
+          <div class="menu">
+            <img src="./images/icons8-menu 2.png" alt="Menu" />
           </div>
-        </footer>
-    </body>
+          <ul>
+            <li class="active">
+              <a href="./index.html">Home</a>
+            </li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="border"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-img">
+        <img src="./images/lineart-la.svg" alt="Hero Image" />
+      </div>
+      <div class="container-">
+        <section class="introduction">
+          <h1><strong>Hi there! I'm Sara.</strong></h1>
+          <h2>
+            A <strong>UX/UI designer</strong> based in sunny
+            <strong>Los Angeles, CA</strong>.
+          </h2>
+          <p class="text-description">
+            I'm passionate about creating purposeful and delightful experiences
+            that bring everyone together
+          </p>
+          <ul class="flex-list">
+            <li class="inverted" id="li-contact">
+              <a href="./contact.html">CONTACT</a>
+            </li>
+            <li id="li-read-more"><a href="./about.html">READ MORE</a></li>
+          </ul>
+        </section>
+        <hr />
+        <section class="work">
+          <h1>Case Studies</h1>
+          <a href="./project.html"
+            ><img src="./images/honeycomb.png" alt="Honeycomb Web App"
+          /></a>
+          <h3>Honeycomb</h3>
+          <ul class="flex-list">
+            <li>User Research</li>
+            <li>UX/UI Design</li>
+            <li>User Testing</li>
+            <li>Branding</li>
+          </ul>
+          <p class="text-description">
+            A cloud storage service that offers a bright and secure space to
+            allow individuals and their teams to find inspiration, create
+            projects and collaborate without any distractions
+          </p>
+          <span class="full-case-study-link">
+            <a href="./project.html">View Full Case Study</a>
+            <img src="./images/icons8-double_right_filled.png" alt="" />
+          </span>
+          <div class="view-all-case-studies">
+            <span>
+              <a href="./work.html">VIEW ALL CASE STUDIES</a>
+            </span>
+          </div>
+        </section>
+        <hr />
+        <section class="process">
+          <img src="./images/designprocess.png" alt="My design process" />
+          <table>
+            <tr>
+              <td>
+                <h3>Research</h3>
+              </td>
+              <td>
+                <h3>Design</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                User Interviews & Survey, Competitive Analysis, Card Sorting
+              </td>
+              <td>
+                Branding & Identity, Sketching, Wireframing, Mockups, Basic
+                Frontend
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>Analysis</h3>
+              </td>
+              <td>
+                <h3>Testing</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                User Stories, User Flows, User Personas, Sitemap, Content
+                Strategy
+              </td>
+              <td>
+                Interactive prototypes, User Testing, Script Development,
+                Refinement
+              </td>
+            </tr>
+          </table>
+        </section>
+        <hr />
+        <section class="tools">
+          <h1>Tools I Use</h1>
+          <img src="./images/Figma.png" alt="Figma" />
+          <img src="./images/Sketch.png" alt="Sketch" />
+          <img src="./images/AdobeCC.png" alt="Adobe CC" />
+          <img src="./images/inVision.png" alt="inVision" />
+          <img src="./images/Whimsical.png" alt="Whimsical" />
+        </section>
+        <hr />
+        <section class="contact">
+          <h1>Let's talk!</h1>
+          <p>
+            Let's chat about how we can create steallar user experiences, or
+            anything and everything about UX over a cup of coffee.
+          </p>
+          <div class="lets-talk-buttons">
+            <ul class="flex-list">
+              <li>
+                <a href="./contact.html">CONTACT</a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/open?id=1VtnsMHQYZG0BQMnKRFiVQVcgBlJMx3O7"
+                  target="_blank"
+                  >DOWNLOAD RESUME</a
+                >
+              </li>
+            </ul>
+            <span class="return-to-top" onclick="scrollToTop()">
+              <img src="./images/icons8-back_filled.png" alt="Return to top" />
+              Return to top
+            </span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <section class="">
+          <div class="icons">
+            <a href="https://github.com/sara-p8"
+              ><img src="./images/Github.svg" alt="Github Icon"
+            /></a>
+            <a href="mailto:sarapapa308@gmail.com"
+              ><img src="./images/Gmail.svg" alt="Gmail Icon"
+            /></a>
+            <a href="https://linkedin.com/in/p-sara"
+              ><img src="./images/Linkedin.svg" alt="Linkedin Icon"
+            /></a>
+            <a href="https://twitter.com/ux_sara"
+              ><img src="./images/Twitter.svg" alt="Twitter Icon"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>© Sara Papa 2019</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
