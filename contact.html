@@ -6,6 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <!-- Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!-- Font Awesome -->
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -35,13 +40,18 @@
             </li>
             <li><a href="./work.html">Work</a></li>
             <li><a href="./about.html">About</a></li>
-            <li class="border active" style="background: rgba(187, 167, 161, 0.7);"><a href="./contact.html">Contact</a></li>
+            <li
+              class="border active"
+              style="background: rgba(187, 167, 161, 0.7);"
+            >
+              <a href="./contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <div id="main">
       <div id="cfm-group">
         <section id="contact-message">
           <h1>I'd love to hear from you!</h1>
@@ -51,26 +61,39 @@
             over a cup of coffee, let's chat! You can fill out the form or send
             me an <a href="mailto:sarapapa308@gmail.com">email</a>.
           </p>
+
+          <p>Want to see my resume instead? You can download it <a
+            href="https://drive.google.com/open?id=1VtnsMHQYZG0BQMnKRFiVQVcgBlJMx3O7"
+            target="_blank"
+            >here</a>.
         </section>
         <section id="contact-form">
           <div class="form">
-              <form
+            <form
               action="https://formspree.io/sarapapa308@gmail.com"
               method="POST"
             >
-              <input type="text" name="name" placeholder="YOUR NAME"/><br />
-              <input type="email" name="message" placeholder="EMAIL ADDRESS"/><br />
-              <textarea name="_replyto" placeholder="MESSAGE" rows="6" /></textarea><br />
-              <input type="submit" value="SEND MESSAGE"/>
+              <input type="text" name="name" placeholder="YOUR NAME" /><br />
+              <input
+                type="email"
+                name="message"
+                placeholder="EMAIL ADDRESS"
+              /><br />
+              <textarea
+                name="_replyto"
+                placeholder="MESSAGE"
+                rows="6"
+              ></textarea
+              ><br />
+              <input type="submit" value="SEND MESSAGE" />
             </form>
           </div>
-
         </section>
       </div>
-    </main>
+    </div>
     <footer>
       <div class="footer">
-        <section class="">
+        <section class="footer">
           <div class="icons">
             <a href="https://github.com/sara-p8"
               ><img src="./images/Github.svg" alt="Github Icon"
