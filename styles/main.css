@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  font-family: "Work Sans";
   color: #333333;
   overflow-x: hidden;
   height: 100%;
+}
+
+* {
+  font-family: "Work Sans";
 }
 
 .menu {
@@ -23,6 +30,7 @@ body {
 
 p {
   font-size: 17px;
+  line-height: 25px;
 }
 
 hr {
@@ -46,6 +54,7 @@ h3 {
 
 td {
   font-size: 17px;
+  line-height: 25px;
 }
 
 .center-child {
@@ -187,7 +196,7 @@ td {
 
 .flex-list {
   display: flex;
-  padding-inline-start: 0px; /** Browsers add a 40px when you include display: flex on a ul */
+  padding-left: 0px;
   align-items: center;
 }
 
@@ -234,26 +243,25 @@ td {
   width: 100%;
 }
 
-.contact > .lets-talk-buttons > p {
+.lets-talk-buttons > p {
   width: 512px;
 }
 
-.contact > .lets-talk-buttons > ul > li {
+.lets-talk-buttons > ul > li {
   border: 3px solid #ae8d92;
   list-style-type: none;
   border-radius: 20px;
   width: 300px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  text-align: center;
 }
 
-.contact > .lets-talk-buttons > ul > li:not(:last-child) {
+.lets-talk-buttons > ul > li:not(:last-child) {
   margin-right: 16px;
 }
 
-.contact > .lets-talk-buttons > ul > li > a {
+.lets-talk-buttons > ul > li > a {
   color: #ae8d92;
   margin: 8px auto;
   text-decoration: none;
@@ -261,7 +269,12 @@ td {
   font-weight: 600;
 }
 
-main {
+.lets-talk-buttons.project > ul > li {
+  width: 100%;
+  margin: 8px 8px;
+}
+
+#main {
   margin-bottom: 100px;
 }
 
@@ -306,8 +319,18 @@ table {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
+  #contact-form {
+    padding-bottom: 120px !important;
+  }
+  .lets-talk-buttons.project > ul {
+    display: unset !important;
+  }
+
+  .desktop {
+    display: none;
+  }
   header,
-  main,
+  #main,
   .footer {
     padding-left: 32px;
     padding-right: 32px;
@@ -348,11 +371,11 @@ table {
   }
 
   #navigation-bar > ul {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     align-content: center;
     background: rgba(227, 216, 212, 0.85);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -441,9 +464,63 @@ table {
     width: 100%;
     height: auto;
   }
+
+  #storage > img {
+    width: 96px;
+    height: auto;
+  }
+
+  .grid-img {
+    width: 100%;
+  }
+  .grid-img > img {
+    width: 100%;
+    padding-bottom: 16px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+
+  .grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 13vw);
+  }
+
+  .grid-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .homepage {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+  }
+
+  .dashboard {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .dashboard-dropdown {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .document-creator {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .public-file-search {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
   h1 {
     font-size: 34px;
   }
@@ -457,13 +534,13 @@ table {
   }
 
   .footer {
-    padding: 0 120px;
+    padding: 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
 
-  main {
+  #main {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -575,8 +652,27 @@ table {
   textarea {
     width: 90%;
   }
+
+  .project-main {
+    margin: 0 300px;
+  }
+
+  .contact.project,
+  .contact.hr {
+    margin: 64px -250px;
+  }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .project-main {
+    margin: 0 16px;
+  }
+
+  .contact.project,
+  .contact.hr {
+    margin: 64px -80px;
+  }
+}
 #contact-body > footer {
   position: absolute;
   bottom: 0;
@@ -605,10 +701,6 @@ textarea {
   border: 1px solid #ae8d92;
   border-radius: 8px;
   font-size: 14px;
-}
-
-input {
-  box-sizing: border-box;
 }
 
 input[type="text"],
@@ -651,6 +743,7 @@ section.lessons > ol {
 #honeycomb-logo {
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 #layered-images {
@@ -658,6 +751,7 @@ section.lessons > ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1; /** Ensures this is moved behind the menu */
 }
 
 #layered-images > img:nth-child(1) {
@@ -674,4 +768,152 @@ section.lessons > ol {
 #honey-comb-first-look {
   /* width: calc(100% + 64px); */
   /* margin-left: -32px; */
+}
+
+.roles {
+  margin: 80px 0;
+}
+
+.roles h3 {
+  /* text-transform: uppercase; */
+}
+
+.roles tr {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr-td {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roles hr {
+  margin: auto auto;
+  width: 50%;
+  background: black;
+}
+
+.roles tr td {
+  width: 33%;
+  text-align: center;
+}
+
+#main section h3 {
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+  text-transform: capitalize;
+}
+
+.research td {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 16px 32px;
+}
+
+.research tr {
+  display: flex;
+  justify-content: center;
+}
+
+.research li {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+#storage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.center-link > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+td.heading {
+  display: flex;
+  justify-content: flex-start;
+}
+
+td.center {
+  text-align: center;
+}
+
+.infoarch > img {
+  width: 100%;
+  height: auto;
+}
+
+.block-images {
+  display: flex;
+}
+.block-images > div {
+  width: 50%;
+  padding: 16px;
+}
+
+.block-images > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.inset-img {
+  padding: 0 120px;
+  width: 100%;
+}
+
+.img-with-text {
+  display: flex;
+}
+
+section.branding > img {
+  width: 100%;
+}
+.visualdesign > img {
+  width: 100%;
+}
+
+.typography {
+  display: flex;
+}
+
+.typography > img {
+  width: 50%;
+  height: auto;
+}
+
+.typography > span {
+  padding-left: 24px;
+}
+
+img[alt="Color Swatches"] {
+  padding: 0 64px;
+}
+
+.desktop tr {
+  justify-content: space-between;
+}
+
+.mobile td {
+  width: unset !important;
+}
+
+.mobile th {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mobile hr {
+  display: none;
 }
