@@ -155,7 +155,7 @@ window.onload = function() {
   if (typingElement) {
     var typist = new Typist(
       typingElement,
-      "I'm a ",
+      "",
       ["UX Designer.", "Product Designer.", "Traveler.", "UI Designer.", "Caffeine Addict.", "Food Nerd.", "Dog Lover."],
       200
     );
