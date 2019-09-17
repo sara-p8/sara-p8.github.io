@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
+    <!-- Reset -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <!-- Reset -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -24,41 +24,47 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+  <body style="background: none;">
+    <header style="background: #F9F3F1;">
       <div class="navigation-container">
         <nav id="navigation-bar">
           <a href="./index.html"
             ><img class="logo" src="./images/Logo-colored.png"
           /></a>
-          <div class="menu">
+          <div class="menu" style="z-index: 2;">
             <img src="./images/icons8-menu 2.png" alt="Menu" />
           </div>
-          <ul>
+          <ul style="z-index:1;">
             <li class="active">
               <a href="./index.html">Home</a>
             </li>
             <li><a href="./work.html">Work</a></li>
             <li><a href="./about.html">About</a></li>
-            <li class="border"><a href="./contact.html">Contact</a></li>
+            <li id="nav-i-contact" class="border">
+              <a href="./contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
-    </header>
-
-    <div id="main" class="project-main" id="main">
       <div class="container">
         <section class="introduction">
-          <img
-            id="honeycomb-logo"
-            src="./images/HoneycombLogo.png"
-            alt="Honeycomb logo"
-          />
-          <p class="project-description">
-            Honeycomb is a cloud storage service that offers a bright, clean and
-            secure space for individuals and their teams to find inspiration,
-            create projects and collaborate without any distractions.
-          </p>
+          <div style="display: flex; justify-content: center;">
+            <img
+              id="honeycomb-logo"
+              src="./images/HoneycombLogo.png"
+              alt="Honeycomb logo"
+            />
+          </div>
+
+          <div>
+            <p class="project-description">
+              Honeycomb is a cloud storage service that offers a bright, clean
+              and secure space for individuals and their teams to find
+              inspiration, create projects and collaborate without any
+              distractions.
+            </p>
+          </div>
+
           <div id="layered-images">
             <img
               src="./images/Honeycomb-BG.png"
@@ -71,220 +77,87 @@
             />
           </div>
         </section>
+      </div>
+    </header>
+
+    <div id="main" class="project-main" id="main">
+      <div class="container">
+        <div class="project-background"></div>
         <section class="roles">
-          <table class="desktop">
-            <tr>
-              <th>
-                <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
-                <h3>Design Role</h3>
-              </th>
-              <th>
-                <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
-                <h3>Design Deliverables</h3>
-              </th>
-              <th>
-                <img
-                  src="./images/browser-windos-01.svg"
-                  alt="Monitor Icon"
-                /><br />
-                <h3>Duration & Tools</h3>
-              </th>
-            </tr>
-            <tr>
-              <td>UX Design</td>
-              <td>User Survey</td>
-              <td>5 Weeks</td>
-            </tr>
-            <tr>
-              <td>Visual Design</td>
-              <td>Competitive Analysis</td>
-              <td class="hr-td"><hr /></td>
-            </tr>
-            <tr>
-              <td>Branding & Identity</td>
-              <td>User Personas</td>
-              <td>Figma</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>User Stories & Flows</td>
-              <td>Sketch</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Wireframes</td>
-              <td>Adobe Photoshop</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Wireframe Prototype</td>
-              <td>Whimsical</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Brand Guidelines</td>
-              <td>InVision</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Content Strategy</td>
-              <td>UsabilityHub</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Hi-Fi Mockups</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Usability Testing</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Final Hi-Fi Prototype</td>
-              <td></td>
-            </tr>
-          </table>
+          <div class="role">
+            <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
+            <h3>Design Role</h3>
+            <p>UX Design</p>
+            <p>Visual Design</p>
 
-          <!-- Mobile -->
-          <table class="mobile">
-            <tr>
-              <th>
-                <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
-                <h3>Design Role</h3>
-              </th>
-            </tr>
-            <tr>
-              <td>UX Design</td>
-            </tr>
-            <tr>
-              <td>Visual Design</td>
-            </tr>
-            <tr>
-              <td>Branding & Identity</td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-          </table>
+            <p>Branding & Identity</p>
+            <p></p>
+            <p></p>
 
-          <table class="mobile">
-            <tr>
-              <th>
-                <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
-                <h3>Design Deliverables</h3>
-              </th>
-            </tr>
-            <tr>
-              <td>User Survey</td>
-            </tr>
-            <tr>
-              <td>Competitive Analysis</td>
-            </tr>
-            <tr>
-              <td>User Personas</td>
-            </tr>
-            <tr>
-              <td>User Stories & Flows</td>
-            </tr>
-            <tr>
-              <td>Wireframes</td>
-            </tr>
-            <tr>
-              <td>Wireframe Prototype</td>
-            </tr>
-            <tr>
-              <td>Brand Guidelines</td>
-            </tr>
-            <tr>
-              <td>Content Strategy</td>
-            </tr>
-            <tr>
-              <td>Hi-Fi Mockups</td>
-            </tr>
-            <tr>
-              <td>Usability Testing</td>
-            </tr>
-            <tr>
-              <td>Final Hi-Fi Prototype</td>
-            </tr>
-          </table>
+            <p></p>
 
-          <table class="mobile">
-            <tr>
-              <th>
-                <img
-                  src="./images/browser-windos-01.svg"
-                  alt="Monitor Icon"
-                /><br />
-                <h3>Duration & Tools</h3>
-              </th>
-            </tr>
-            <tr>
-              <td>5 Weeks</td>
-            </tr>
-            <tr>
-              <td class="hr-td"><hr /></td>
-            </tr>
-            <tr>
-              <td>Figma</td>
-            </tr>
-            <tr>
-              <td>Sketch</td>
-            </tr>
-            <tr>
-              <td>Adobe Photoshop</td>
-            </tr>
-            <tr>
-              <td>Whimsical</td>
-            </tr>
-            <tr>
-              <td>InVision</td>
-            </tr>
-            <tr>
-              <td>UsabilityHub</td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-          </table>
+            <p></p>
 
-          <!-- End Mobile -->
+            <p></p>
+          </div>
+          <div class="role">
+            <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
+            <h3>Design Deliverables</h3>
+            <p>User Survey</p>
+
+            <p>Competitive Analysis</p>
+            <p>User Personas</p>
+
+            <p>User Stories & Flows</p>
+
+            <p>Wireframes</p>
+
+            <p>Wireframe Prototype</p>
+
+            <p>Brand Guidelines</p>
+
+            <p>Content Strategy</p>
+            <p>Hi-Fi Mockups</p>
+
+            <p>Usability Testing</p>
+            <p>Final Hi-Fi Prototype</p>
+          </div>
+          <div class="role">
+            <img
+              src="./images/browser-windos-01.svg"
+              alt="Monitor Icon"
+            /><br />
+            <h3>Duration & Tools</h3>
+            <p>5 Weeks</p>
+
+            <div class="hr-div"></div>
+            <p>Figma</p>
+
+            <p>Sketch</p>
+
+            <p>Adobe Photoshop</p>
+
+            <p>Whimsical</p>
+
+            <p>InVision</p>
+
+            <p>UsabilityHub</p>
+          </div>
         </section>
+        <div class="view-all-case-studies">
+          <span class="plain-invertible">
+            <a href="./work.html">VIEW INVISION PROTOTYPE</a>
+          </span>
+        </div>
+
         <hr />
-        <section class="overview">
-          <h1>Part I: Overview</h1>
-          <h3>
-            <img src="./images/icon1.png" alt="Notepad Icon" /> What is
-            Honeycomb?
+        <section class="overview slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part I: Overview</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon1.png" alt="Notepad Icon" />
+            <span>What is Honeycomb?</span>
           </h3>
           <p>
             Honeycomb is a cloud storage app that provides its users with a
@@ -293,7 +166,10 @@
             discovering resources within the platform and categorizing their
             documents, images, links and other files in one central place.
           </p>
-          <h3><img src="./images/icon2.png" alt="Sign Icon" /> The Problem</h3>
+          <h3 class="h3-icon">
+            <img src="./images/icon2.png" alt="Sign Icon" />
+            <span>The Problem</span>
+          </h3>
           <p>
             Current cloud storage and organization products that are available
             to users have cluttered and busy dashboards and lack resources that
@@ -301,8 +177,9 @@
             on multiple platforms. They also lack simplicity and visibility when
             users try to locate a file or attempt to organize their content.
           </p>
-          <h3>
-            <img src="./images/icon3.png" alt="Lightbulb Icon" /> The Solution
+          <h3 class="h3-icon">
+            <img src="./images/icon3.png" alt="Lightbulb Icon" />
+            <span>The Solution</span>
           </h3>
           <p>
             To solve the problem at hand, Honeycomb was born from the following
@@ -327,9 +204,14 @@
           </ul>
         </section>
         <hr />
-        <section class="research">
-          <h1>Part II: Research & Discovery</h1>
-          <h3><img src="./images/icon4.png" alt="User Icon" /> User Survey</h3>
+        <section class="research slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part II: Research & Discovery</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon4.png" alt="User Icon" />
+            <span>User Survey</span>
+          </h3>
           <p>
             User research opens the gateway to understanding why the solutions
             were carefully chosen. By getting to know the users, I was able to
@@ -340,88 +222,51 @@
             to multiple social media platforms, email contacts and friends.
             <br /><br />Here are key highlights collected from survey data:
           </p>
-          <table class="desktop">
-            <tr>
-              <td>
-                <img
-                  src="./images/DailyUsageChart.png"
-                  alt="Daily usage chart"
-                />
-              </td>
-              <td>
-                <img
-                  src="./images/BrandPreferenceChart.png"
-                  alt="Brand preference chart"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>95% of the survey pool use cloud storage services</td>
-              <td>
-                41% favored Google Drive while Dropbox and iCloud trailed behind
-                at 20% respectively as preferred platforms.
-              </td>
-            </tr>
-            <tr>
-              <td>
+          <div class="research-section">
+            <div class="row">
+              <div>
+                <div style="display: flex; justify-content: center;">
+                  <img
+                    src="./images/DailyUsageChart.png"
+                    alt="Daily usage chart"
+                    style="max-width: 130px"
+                  />
+                </div>
+
+                <p>95% of the survey pool use cloud storage services</p>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: center;">
+                  <img
+                    src="./images/BrandPreferenceChart.png"
+                    alt="Brand preference chart"
+                  />
+                </div>
+
+                <p>
+                  41% favored Google Drive while Dropbox and iCloud trailed
+                  behind at 20% respectively as preferred platforms.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="features-chart">
                 <img
                   src="./images/FeaturesChart.png"
                   alt="Features chart"
-                  style="width: 100%; height: auto;"
+                  style="width: 100%; height: auto; max-width: 256px;"
                 />
-              </td>
-              <td>
-                When asked what features they value as important in a platform,
-                74% said they wanted upload content, 68% selected the ability to
-                view and edit files, 64% chose sharing and security features and
-                63% wants to create content.
-              </td>
-            </tr>
-          </table>
-
-          <table class="mobile">
-            <tr>
-              <td>
-                <img
-                  src="./images/DailyUsageChart.png"
-                  alt="Daily usage chart"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>95% of the survey pool use cloud storage services</td>
-            </tr>
-            <tr>
-              <td>
-                <img src="./images/FeaturesChart.png" alt="Features chart" />
-              </td>
-            </tr>
-          </table>
-
-          <table class="mobile">
-            <tr>
-              <td>
-                <img
-                  src="./images/BrandPreferenceChart.png"
-                  alt="Brand preference chart"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                41% favored Google Drive while Dropbox and iCloud trailed behind
-                at 20% respectively as preferred platforms.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                When asked what features they value as important in a platform,
-                74% said they wanted upload content, 68% selected the ability to
-                view and edit files, 64% chose sharing and security features and
-                63% wants to create content.
-              </td>
-            </tr>
-          </table>
+              </div>
+              <div style="display: flex; align-items: center;">
+                <p>
+                  When asked what features they value as important in a
+                  platform, 74% said they wanted upload content, 68% selected
+                  the ability to view and edit files, 64% chose sharing and
+                  security features and 63% wants to create content.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <p>
             When asked about what they liked the most about their current cloud
@@ -450,9 +295,9 @@
             where they could have access to resources, create, edit or save
             content and collaborate.
           </p>
-          <h3>
+          <h3 class="h3-icon">
             <img src="./images/icon5.png" alt="Magnifying Glass Icon" />
-            Competitive Analysis
+            <span>Competitive Analysis</span>
           </h3>
           <p>
             Now that I had learned more about my potential users, it was time to
@@ -460,12 +305,12 @@
             weaknesses, opportunities and threats. No matter how successful
             these products were, I saw that I could still fill a pro and con
             list for all of them.
-          </p>
+          </p><br>
           <div id="storage">
             <img src="./images/DropboxLogo.png" alt="Dropbox Logo" />
             <img src="./images/GoogleDriveLogo.png" alt="Google Drive Logo" />
             <img src="./images/PinterestLogo.png" alt="Pinterest Logo" />
-          </div>
+          </div><br>
           <p>
             Dropbox’s most popular feature was their sync folder where users can
             automatically upload to the cloud and share with other devices but
@@ -516,8 +361,9 @@
             </li>
             <li>Build the MVP with a focus on showcasing important features</li>
           </ul>
-          <h3>
-            <img src="./images/icon6.png" alt="Person Icon" /> User Persona
+          <h3 class="h3-icon">
+            <img src="./images/icon6.png" alt="Person Icon" />
+            <span>User Persona</span>
           </h3>
           <p>
             With all this information laid out, it was time to translate the
@@ -729,20 +575,27 @@
           </div>
         </section>
         <hr />
-        <section class="infoarch">
-          <h1>Part III: Information Architecture</h1>
-          <h3>
-            <img src="./images/icon7.png" alt="Flowchart Icon" /> User Stories &
-            Flow
+        <section class="infoarch slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">
+              Part III: Information Architecture
+            </h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon7.png" alt="Flowchart Icon" />
+            <span>User Stories & Flow</span>
           </h3>
           <p>
             After collecting and analyzing data and creating my personas, it was
             easier for me to compile a
-            <a
-              href="https://docs.google.com/spreadsheets/d/1_k-1lG6SXh0QasLPB4Vv_GaI3tj5w_cpWpjWmVZOhu0/edit?usp=sharing"
-              target="_blank"
-              >list of user stories</a
-            >. I ranked these stories by importance and focused on high priority
+            <span class="hover-link">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1_k-1lG6SXh0QasLPB4Vv_GaI3tj5w_cpWpjWmVZOhu0/edit?usp=sharing"
+                target="_blank"
+                >list of user stories</a
+              >
+            </span>
+            . I ranked these stories by importance and focused on high priority
             tasks to reach the minimum viable product (MVP). These user stories
             would later on be translated into user flows to better show how the
             user would execute each task such as the example shown below:
@@ -766,33 +619,33 @@
             >
           </div>
 
-          <h3>
-            <img src="./images/icon8.png" alt="Browser Icon" /> Site Map &
-            Content Strategy
+          <h3 class="h3-icon">
+            <img src="./images/icon8.png" alt="Browser Icon" />
+            <span>Site Map & Content Strategy</span>
           </h3>
           <p>
             Now that I had an idea of what users were looking for in a platform
             and how I wanted them to accomplish tasks, it was time to carefully
             decide where a user would find a feature they’re looking for by
             creating a
-            <a
+            <span class="hover-link"><a
               href="https://whimsical.com/DbhNVpayHi6PxCafmqYfXZ"
               target="_blank"
-              >sitemap</a
-            >. This ultimately helped me stay true to the design decisions I
+              >sitemap</a></span>.
+              This ultimately helped me stay true to the design decisions I
             formed after research.
-          </p>
+          </p><br>
           <img src="./images/sitemap.png" alt="Sitemap Preview" />
-          <p>
+          <p><br>
             In addition to this, I had to draft what future customers would see,
             read and most importantly, feel while using Honeycomb. Crafting
             content strategy was made easier with the power of knowledge I had
             acquired from the earlier stages of research, and would help during
             the branding phase.
           </p>
-          <h3>
-            <img src="./images/icon9.png" alt="Pen Icon" /> Sketches &
-            Wireframes
+          <h3 class="h3-icon">
+            <img src="./images/icon9.png" alt="Pen Icon" />
+            <span>Sketches & Wireframes</span>
           </h3>
           <p>
             My user flows allowed me to have a better idea on how the interface
@@ -803,11 +656,10 @@
           <img src="./images/sketches.png" alt="Sketches Preview" />
           <p>
             I used my sketches, user stories and sitemap to create
-            <a
+            <span class="hover-link"><a
               href="https://www.figma.com/file/QqqTemKCGnDOzNeQLZI3b9zy/Cloud-Storage-Wireframes?node-id=0%3A1"
               target="_blank"
-              >low-fidelity wireframes</a
-            >
+              >low-fidelity wireframes</a></span>
             in Figma that addressed the solution I had in mind. What was
             important to me was that users could easily find what they’re
             looking for - this is why having folders on the top and everything
@@ -831,9 +683,9 @@
               <img src="./images/wireframe4.png" alt="Wireframe Preview 4" />
             </div>
           </div>
-          <h3>
-            <img src="./images/icon10.png" alt="Checklist Icon" />Usability
-            Testing
+          <h3 class="h3-icon">
+            <img src="./images/icon10.png" alt="Checklist Icon" />
+            <span>Usability Testing</span>
           </h3>
           <p>
             Prior to moving on to branding and high-fidelity mockups, I needed
@@ -893,8 +745,10 @@
           </div>
         </section>
         <hr />
-        <section class="branding">
-          <h1>Part IV: Branding & Identity</h1>
+        <section class="branding slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part IV: Branding & Identity</h1>
+          </div>
           <img
             src="./images/HoneycombLogo-BG.png"
             alt="Honeycomb Logo with background"
@@ -911,9 +765,9 @@
             she or he can create something genius to groups coming together and
             tackling a big project, Honeycomb captures the concept of the brand.
           </p>
-          <h3>
-            <img src="./images/icon11.png" alt="Pencil and Ruler Icon" /> Logo
-            Design
+          <h3 class="h3-icon">
+            <img src="./images/icon11.png" alt="Pencil and Ruler Icon" />
+            <span>Logo Design</span>
           </h3>
           <p>
             Having decided the brand name, it was time to design a logo that
@@ -931,8 +785,9 @@
             <img src="./images/LogoSketches.png" alt="Logo Sketches" />
           </div>
 
-          <h3>
-            <img src="./images/icon12.png" alt="Dropper Icon" /> Color Palette
+          <h3 class="h3-icon">
+            <img src="./images/icon12.png" alt="Dropper Icon" />
+            <span>Color Palette</span>
           </h3>
           <img src="./images/ColorSwatches.png" alt="Color Swatches" />
           <p>
@@ -944,8 +799,9 @@
             the orange and muted pale pink was chosen to imbibe energy and used
             selectively throughout the platform.
           </p>
-          <h3>
-            <img src="./images/icon13.png" alt="Letter Icon" /> Typography
+          <h3 class="h3-icon">
+            <img src="./images/icon13.png" alt="Letter Icon" />
+            <span>Typography</span>
           </h3>
           <div class="typography">
             <img src="./images/FontChoices.png" alt="Font Preview" />
@@ -973,11 +829,13 @@
           </div>
         </section>
         <hr />
-        <section class="visualdesign">
-          <h1>Part V: Visual Design</h1>
-          <h3>
+        <section class="visualdesign slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part V: Visual Design</h1>
+          </div>
+          <h3 class="h3-icon">
             <img src="./images/icon14.png" alt="Window Layout Icon" />
-            High-fidelity Mockups
+            <span>High-fidelity Mockups</span>
           </h3>
           <p>
             Using my low-fidelity wireframes, I created the layout of
@@ -985,9 +843,9 @@
             and coupled it with feedback received through user testing.
           </p>
           <img src="./images/HiFiMockup.png" alt="Mockup display" />
-          <h3>
-            <img src="./images/icon15.png" alt="Clipboard Icon" /> Preference
-            Testing
+          <h3 class="h3-icon">
+            <img src="./images/icon15.png" alt="Clipboard Icon" />
+            <span>Preference Testing</span>
           </h3>
           <p>
             But that’s not where the road ends - I put my iterations to test by
@@ -996,21 +854,21 @@
             were most popular and favored to better refine Honeycomb’s design.
           </p>
           <ul>
-            <li>
+            <li class="hover-link">
               <a
                 href="https://app.usabilityhub.com/tests/698adcb186cf/results/428a22e6bf67?%7B%22viewState%22:%7B%22isExpandedBySectionScreenshotId%22:%7B%22513946%22:true,%22513947%22:true%7D%7D%7D"
                 target="_blank"
                 >Landing page design preference test</a
               >
             </li>
-            <li>
+            <li class="hover-link">
               <a
                 href="https://app.usabilityhub.com/tests/2a8a46e7033d/results/60cf490e8d3d"
                 target="_blank"
                 >Button placement preference test</a
               >
             </li>
-            <li>
+            <li class="hover-link">
               <a
                 href="https://app.usabilityhub.com/tests/9f99884f3caa/results/5b85fcfe3602"
                 target="_blank"
@@ -1022,9 +880,9 @@
             I applied the feedback received from preference tests to the design
             due since the users’ opinions are important and beneficial.
           </p>
-          <h3>
-            <img src="./images/icon16.png" alt="Layout Icon" /> Clickable
-            Prototype
+          <h3 class="h3-icon">
+            <img src="./images/icon16.png" alt="Layout Icon" />
+            <span>Clickable Prototype</span>
           </h3>
           <p>
             After receiving the results from my preference test, I went back to
@@ -1078,44 +936,48 @@
             Making these changes to the design finally paved a way for Honeycomb
             to come to life.
           </p>
-          <h3>
-            <img src="./images/icon17.png" alt="Checkbox with Check Icon" /> The
-            Final Product
+          <h3 class="h3-icon">
+            <img src="./images/icon17.png" alt="Checkbox with Check Icon" />
+            <span>The Final Product</span>
           </h3>
           <div class="grid-img">
-            <img
-              src="./images/Homepage.png"
-              alt="Screenshot of Homepage"
-              class="homepage"
-            />
-            <img
-              src="./images/Dashboard1.png"
-              alt="Screenshot of Dashboard"
-              class="dashboard"
-            />
-            <img
-              class="dashboard-dropdown"
-              src="./images/Dashboard2.png"
-              alt="Screenshot of Dashboard with dropdown menu open"
-            />
-            <img
-              class="document-creator"
-              src="./images/Create1.png"
-              alt="Screenshot of document creator"
-            />
-            <img
-              class="public-file-search"
-              src="./images/Search1.png"
-              alt="Screenshot of public file search"
-            />
+            <div class="col">
+              <img
+                src="./images/Homepage.png"
+                alt="Screenshot of Homepage"
+                class="homepage"
+              />
+            </div>
+            <div class="col flex-col">
+              <img
+                src="./images/Dashboard1.png"
+                alt="Screenshot of Dashboard"
+                class="dashboard"
+              />
+              <img
+                class="dashboard-dropdown"
+                src="./images/Dashboard2.png"
+                alt="Screenshot of Dashboard with dropdown menu open"
+              />
+              <img
+                class="document-creator"
+                src="./images/Create1.png"
+                alt="Screenshot of document creator"
+              />
+              <img
+                class="public-file-search"
+                src="./images/Search1.png"
+                alt="Screenshot of public file search"
+              />
+            </div>
           </div>
 
-          <div class="lets-talk-buttons project">
+          <div class="lets-talk-buttons project" style="margin-top: unset;">
             <ul
               class="flex-list"
               style="display: flex; justify-content: center;"
             >
-              <li style="width: unset;">
+              <li style="width: unset;" class="plain-invertible">
                 <a
                   style="padding: 0 16px;"
                   target="_blank"
@@ -1123,7 +985,7 @@
                   >VIEW HIGH FIDELITY MOCKUPS HERE</a
                 >
               </li>
-              <li style="width: unset;">
+              <li style="width: unset;" class="plain-invertible">
                 <a
                   style="padding: 0 16px;"
                   href="https://invis.io/Y9SUW1I872V#/372514468_Dashboard_1"
@@ -1135,10 +997,13 @@
           </div>
         </section>
         <hr />
-        <section class="wrapup">
-          <h1>Part VI: Wrapping it All Up!</h1>
-          <h3>
-            <img src="./images/icon18.png" alt="Teacher Icon" /> What I Learned
+        <section class="wrapup slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part VI: Wrapping it All Up!</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon18.png" alt="Teacher Icon" />
+            <span>What I Learned</span>
           </h3>
           <p>
             <strong
@@ -1172,9 +1037,9 @@
             primary flows to ensure that everything is optimal and the best it
             could be.
           </p>
-          <h3>
-            <img src="./images/icon19.png" alt="Clock Icon" /> If I Had More
-            Time...
+          <h3 class="h3-icon">
+            <img src="./images/icon19.png" alt="Clock Icon" />
+            <span>If I Had More Time...</span>
           </h3>
           <p>
             I would love to create additional pages to make the prototype more
@@ -1189,15 +1054,15 @@
         <section class="contact project">
           <h1>Let's talk!</h1>
           <p>
-            Let's chat about how we can create steallar user experiences, or
+            Let's chat about how we can create stellar user experiences, or
             anything and everything about UX over a cup of coffee.
           </p>
           <div class="lets-talk-buttons">
             <ul class="flex-list">
-              <li>
+              <li class="plain-invertible">
                 <a href="./contact.html">CONTACT</a>
               </li>
-              <li>
+              <li class="plain-invertible">
                 <a
                   href="https://drive.google.com/open?id=1VtnsMHQYZG0BQMnKRFiVQVcgBlJMx3O7"
                   target="_blank"

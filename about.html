@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
     <!-- Reset -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="styles/reset.css" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <!-- Font Awesome -->
     <link
@@ -46,21 +47,26 @@
           </ul>
         </nav>
       </div>
+      <div class="main">
+        <div class="container">
+          <div class="container">
+            <section class="introduction" id="about-me">
+              <img
+                src="./images/about-profile.jpg"
+                alt="Profile photo"
+                width="460"
+                height="613"
+              />
+              <div class="about-me">
+                <h1><strong>Hi there! I'm Sara</strong></h1>
+                <h2>I'm a <strong id="typing-element"></strong>&nbsp;</h2>
+              </div>
+            </section>
+        </div>
+      </div>
     </header>
     <div id="main">
-      <div class="container">
-        <section class="introduction" id="about-me">
-          <img
-            src="./images/about-profile.jpg"
-            alt="Profile photo"
-            width="460"
-            height="613"
-          />
-          <div class="about-me">
-            <h1><strong>Hi there! I'm Sara</strong></h1>
-            <h2>I'm a <strong id="typing-element"></strong>&nbsp;</h2>
-          </div>
-        </section>
+
 
         <section class="bio">
           <p>
@@ -145,13 +151,14 @@
         <section class="contact">
           <h1>Let's talk!</h1>
           <p>
-            Let's chat about how we can create steallar user experiences, or
+            Let's chat about how we can create stellar user experiences, or
             anything and everything about UX over a cup of coffee.
           </p>
           <div class="lets-talk-buttons">
             <ul class="flex-list">
               <li class="plain-invertible">
                 <a href="./contact.html">CONTACT</a>
+                <div></div>
               </li>
               <li class="plain-invertible">
                 <a
