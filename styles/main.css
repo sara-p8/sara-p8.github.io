@@ -54,6 +54,7 @@ h3 {
 
 td {
   font-size: 17px;
+  line-height: 29px;
 }
 
 .center-child {
@@ -82,7 +83,7 @@ td {
 
 #navigation-bar > ul > li {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 18px;
   padding: 4px 26px;
   display: flex;
   flex-direction: column;
@@ -193,7 +194,7 @@ td {
   color: #333333;
   font-weight: 600;
   font-size: 17px;
-  line-height: 25px;
+  line-height: 29px;
   text-decoration: none;
 }
 
@@ -327,9 +328,13 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;
-  color: #ae8d92;
   cursor: pointer;
+}
+
+.return-to-top a {
+  text-decoration: none;
+  color: #ae8d92;
+  font-size: 14px;
 }
 
 .return-to-top > img {
@@ -388,17 +393,21 @@ table {
   }
 
   .lets-talk-buttons.project > ul {
-    display: unset !important;
+    display: flex;
+    justify-content: center;
   }
 
   .desktop {
     display: none;
   }
   header,
-  #main,
-  .footer {
+  #main {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .footer {
+    padding: 20px 32px;
   }
 
   .logo {
@@ -552,6 +561,7 @@ table {
   .features-chart {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -705,7 +715,7 @@ table {
   }
 
   .footer {
-    padding: 0 60px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -881,6 +891,7 @@ table {
 
 #contact-message > p {
   font-size: 17px;
+  line-height: 29px;
 }
 
 #cfm-group {
@@ -1049,7 +1060,7 @@ section.lessons > ol {
 
 .research li {
   font-size: 17px;
-  line-height: 25px;
+  line-height: 29px;
 }
 
 #storage {
@@ -1149,19 +1160,11 @@ h1.rounded-background {
   position: relative;
 }
 
-h1.rounded-background:after {
-  content: "";
-  width: 100%;
-  height: 10px;
-  background-color: #e3d8d4; /* margin-top: -8px; */
-  border-radius: 10px;
-  z-index: -1;
-  position: relative;
-  position: absolute;
-  bottom: 7px;
-}
-
 .h3-icon {
   display: flex;
   align-items: center;
+}
+
+.h3-icon span {
+  padding: 0 10px;
 }
