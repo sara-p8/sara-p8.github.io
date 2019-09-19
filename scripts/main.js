@@ -172,22 +172,6 @@ function setupEventListeners() {
   }
 }
 
-function scrollToTop() {
-  if (
-    document.body.scrollTop === 0 &&
-    document.documentElement.scrollTop === 0
-  ) {
-    return;
-  }
-  setTimeout(function() {
-    if (document.body.scrollTop > 0) document.body.scrollTop -= 30;
-    if (document.documentElement.scrollTop > 0)
-      document.documentElement.scrollTop -= 30;
-
-    scrollToTop();
-  }, 15);
-}
-
 /** @type HTMLImageElement */
 var menuImg = document.querySelector(".menu > img");
 var menuUl = document.querySelector("#navigation-bar > ul");
