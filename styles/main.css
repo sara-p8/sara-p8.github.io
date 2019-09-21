@@ -335,6 +335,8 @@ table {
 /** Project Page */
 .project-description {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .return-to-top {
@@ -581,6 +583,14 @@ table {
 @media only screen and (min-width: 1024px) {
   .background-container {
     margin: 0 -120px;
+  }
+
+  .project-description p {
+    max-width: 304px;
+  }
+
+  .contact-page-link {
+    background: rgba(187, 167, 161, 0.7);
   }
 
   .background-container > * {
