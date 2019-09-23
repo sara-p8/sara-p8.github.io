@@ -362,6 +362,10 @@ table {
     background: linear-gradient(180deg, #fbefeb 0%, #ffffff 100%);
   }
 
+  .tools img {
+    width: 50%;
+  }
+
   input[type="submit"],
   .introduction > ul > li > a,
   .lets-talk-buttons > ul > li > a,
@@ -1181,7 +1185,7 @@ img[alt="Color Swatches"] {
 
 .tools {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
