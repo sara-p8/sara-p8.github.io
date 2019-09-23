@@ -11,11 +11,11 @@
       gtag('config', 'G-3XKX7QHKHF');
     </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
+    <!-- Reset -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <!-- Reset -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -26,76 +26,1076 @@
       rel="stylesheet"
     />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body id="contact-body">
-    <div class="background"></div>
-    <header>
+  <body style="background: none;">
+    <header style="background: #F9F3F1;" id="top">
       <div class="navigation-container">
         <nav id="navigation-bar">
           <a href="./index.html"
             ><img class="logo" src="./images/Logo-colored.png"
           /></a>
-          <div class="menu">
+          <div class="menu" style="z-index: 2;">
             <img src="./images/icons8-menu 2.png" alt="Menu" />
           </div>
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
+          <ul style="z-index:1;">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active">
+              <a href="./index.html#work">Work</a>
             </li>
-            <li><a href="./index.html#work">Work</a></li>
             <li><a href="./about.html">About</a></li>
-            <li id="nav-" class="border active contact-page-link">
+            <li id="nav-li-contact" class="border">
               <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="cfm-group">
-        <section id="contact-message">
-          <h1>I'd love to hear from you!</h1>
-          <p>
-            Please feel free to reach out to say hello 👋. Whether you have a
-            project you'd like to discuss or just want to talk all things UX
-            over a cup of coffee, let's chat! You can fill out the form or send
-            me an <a href="mailto:sarapapa308@gmail.com">email</a>.
-          </p>
-          <p>
-            Want to see my resume instead? You can download it
-            <a href="">here</a>.
-          </p>
-        </section>
-        <section id="contact-form">
-          <div class="form">
-            <form
-              action="https://formspree.io/sarapapa308@gmail.com"
-              method="POST"
-            >
-              <input type="text" name="name" placeholder="YOUR NAME" /><br />
-              <input
-                type="email"
-                name="message"
-                placeholder="EMAIL ADDRESS"
-              /><br />
-              <textarea
-                name="message"
-                placeholder="MESSAGE"
-                rows="6"
-              ></textarea
-              ><br />
-              <input type="submit" value="SEND MESSAGE" />
-            </form>
+      <div class="container">
+        <section class="introduction">
+          <div style="display: flex; justify-content: center;">
+            <img
+              id="honeycomb-logo"
+              src="./images/HoneycombLogo.png"
+              alt="Honeycomb logo"
+            />
+          </div>
+
+          <div class="project-description">
+            <p>
+              Honeycomb is a cloud storage service that offers a bright, clean
+              and secure space for individuals and their teams to find
+              inspiration, create projects and collaborate without any
+              distractions.
+            </p>
+          </div>
+
+          <div id="layered-images">
+            <img
+              src="./images/honeycomb-background.png"
+              alt="Honeycomb Background Logo"
+            />
+            <img
+              id="honey-comb-first-look"
+              src="./images/honeycombshowcase.png"
+              alt="Honeycomb First Look"
+            />
           </div>
         </section>
       </div>
     </header>
 
-    <div id="main"></div>
+    <div id="main" class="project-main" id="main">
+      <div class="container">
+        <div class="project-background"></div>
+        <section class="roles">
+          <div class="role">
+            <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
+            <h3>Design Role</h3>
+            <p>UX Design</p>
+            <p>Visual Design</p>
+
+            <p>Branding & Identity</p>
+            <p></p>
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+          </div>
+          <div class="role">
+            <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
+            <h3>Design Deliverables</h3>
+            <p>User Survey</p>
+
+            <p>Competitive Analysis</p>
+            <p>User Personas</p>
+
+            <p>User Stories & Flows</p>
+
+            <p>Wireframes</p>
+
+            <p>Wireframe Prototype</p>
+
+            <p>Brand Guidelines</p>
+
+            <p>Content Strategy</p>
+            <p>Hi-Fi Mockups</p>
+
+            <p>Usability Testing</p>
+            <p>Final Hi-Fi Prototype</p>
+          </div>
+          <div class="role">
+            <img
+              src="./images/browser-windos-01.svg"
+              alt="Monitor Icon"
+            /><br />
+            <h3>Duration & Tools</h3>
+            <p>5 Weeks</p>
+
+            <div class="hr-div"></div>
+            <p>Figma</p>
+
+            <p>Sketch</p>
+
+            <p>Adobe Photoshop</p>
+
+            <p>Whimsical</p>
+
+            <p>InVision</p>
+
+            <p>UsabilityHub</p>
+          </div>
+        </section>
+        <div class="view-all-case-studies">
+          <span class="plain-invertible">
+            <a href="https://invis.io/78TUBC7BKTS">VIEW INVISION PROTOTYPE</a>
+          </span>
+        </div>
+
+        <hr />
+        <section class="overview slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part I: Overview</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon1.png" alt="Notepad Icon" />
+            <span>What is Honeycomb?</span>
+          </h3>
+          <p>
+            Honeycomb is a cloud storage app that provides its users with a
+            seamless way to create projects and store their files. Its core
+            value is giving users the ability to jumpstart their projects by
+            discovering resources within the platform and categorizing their
+            documents, images, links and other files in one central place.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon2.png" alt="Sign Icon" />
+            <span>The Problem</span>
+          </h3>
+          <p>
+            Current cloud storage and organization products that are available
+            to users have cluttered and busy dashboards and lack resources that
+            they could use throughout the process that results to users relying
+            on multiple platforms. They also lack simplicity and visibility when
+            users try to locate a file or attempt to organize their content.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon3.png" alt="Lightbulb Icon" />
+            <span>The Solution</span>
+          </h3>
+          <p>
+            To solve the problem at hand, Honeycomb was born from the following
+            decisions:
+          </p>
+          <ul>
+            <li>
+              Have a less cluttered user interface that isn’t feature laden to
+              avoid distractions and lessen user confusion when navigating
+              through the platform.
+            </li>
+            <li>
+              Be a secure space to allow community sharing so others could use
+              public files as a resource which minimizes the need to hop from
+              one platform to another.
+            </li>
+            <li>
+              Enable the users ability to tag and categorize their content to
+              ensure that they can organize their content efficiently and
+              effectively so they can find what they need, when they need it.
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section class="research slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part II: Research & Discovery</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon4.png" alt="User Icon" />
+            <span>User Survey</span>
+          </h3>
+          <p>
+            User research opens the gateway to understanding why the solutions
+            were carefully chosen. By getting to know the users, I was able to
+            tell what their current pain points were and what they wanted out of
+            a cloud storage service. Although I had formed assumptions of what I
+            felt users needed, only research would give me real and concrete
+            answers. I started the research process by posting a survey online
+            to multiple social media platforms, email contacts and friends.
+            <br /><br />Here are key highlights collected from survey data:
+          </p>
+          <div class="research-section">
+            <div class="row">
+              <div>
+                <div style="display: flex; justify-content: center;">
+                  <img
+                    src="./images/DailyUsageChart.png"
+                    alt="Daily usage chart"
+                    style="max-width: 130px"
+                  />
+                </div>
+
+                <p>95% of the survey pool use cloud storage services</p>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: center;">
+                  <img
+                    src="./images/BrandPreferenceChart.png"
+                    alt="Brand preference chart"
+                  />
+                </div>
+
+                <p>
+                  41% favored Google Drive while Dropbox and iCloud trailed
+                  behind at 20% respectively as preferred platforms.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="features-chart">
+                <img
+                  src="./images/FeaturesChart.png"
+                  alt="Features chart"
+                  style="width: 100%; height: auto; max-width: 256px;"
+                />
+              </div>
+              <div style="display: flex; align-items: center;">
+                <p>
+                  When asked what features they value as important in a
+                  platform, 74% said they wanted upload content, 68% selected
+                  the ability to view and edit files, 64% chose sharing and
+                  security features and 63% wants to create content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            When asked about what they liked the most about their current cloud
+            storage service they said:
+          </p>
+          <ul>
+            <li>“It’s easy to use”</li>
+            <li>“The convenience of it”</li>
+            <li>“It’s free”</li>
+          </ul>
+          <p>As far as their dislikes were concerned, they answered:</p>
+          <ul>
+            <li>“Too much clutter”</li>
+            <li>
+              “Files are saved one after the other, so they aren't organized and
+              can get lost”
+            </li>
+            <li>“I have to use multiple platforms to get one thing done”</li>
+          </ul>
+          <p>
+            I learned critical things that I never knew about the survey
+            participants. If I hadn’t researched, I would’ve gone with my
+            initial theory of users wanting newer features and a better overall
+            user experience. Surprisingly, I realized that users wanted a simple
+            platform that would be easy to use and act as the one central place
+            where they could have access to resources, create, edit or save
+            content and collaborate.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon5.png" alt="Magnifying Glass Icon" />
+            <span>Competitive Analysis</span>
+          </h3>
+          <p>
+            Now that I had learned more about my potential users, it was time to
+            learn more about the competition. I looked into their strengths,
+            weaknesses, opportunities and threats. No matter how successful
+            these products were, I saw that I could still fill a pro and con
+            list for all of them.
+          </p>
+          <br />
+          <div id="storage">
+            <img src="./images/DropboxLogo.png" alt="Dropbox Logo" />
+            <img src="./images/GoogleDriveLogo.png" alt="Google Drive Logo" />
+            <img src="./images/PinterestLogo.png" alt="Pinterest Logo" />
+          </div>
+          <br />
+          <p>
+            Dropbox’s most popular feature was their sync folder where users can
+            automatically upload to the cloud and share with other devices but
+            their downfall was the limited amount of free storage they offer to
+            their users (2 GB) and absence of native productivity tools.
+          </p>
+          <p>
+            Google Drive on the other hand is a powerhouse for productivity
+            tools and has strong brand recognition that exudes trustworthiness
+            but, since they offer so much features, content that users create or
+            store end up lost and hard to locate when needed.
+          </p>
+          <p>
+            Pinterest’s use of images are visually appealing and catches
+            interest very quickly but the interface can easily feel cluttered
+            and looking for a specific pinned item becomes a difficult feat due
+            to many pin boards or uncategorized pins.
+          </p>
+          <div class="center-link">
+            <a
+              href="https://drive.google.com/open?id=1o01ZF_KEP5aZUK6i4fr6cHEYPbHzTdE-HVdYJOBjwP0"
+              target="_blank"
+              >VIEW COMPETITIVE ANALYSIS HERE</a
+            >
+          </div>
+
+          <p>
+            To recap, here’s the list of design decisions pulled from combing
+            through research data:
+          </p>
+          <ul>
+            <li>
+              Address the trend of low discoverability amongst competitors by
+              allowing users to categorize and tag their content
+            </li>
+            <li>
+              Design an intuitive and minimalist interface that focuses on one
+              action at a time to avoid distractions and user confusion
+            </li>
+            <li>
+              Provide users the option to securely share their content with
+              other users on the platform so they could act as a resource and
+              vice versa
+            </li>
+            <li>
+              Allow users to sign up quickly by using their email or social
+              media account
+            </li>
+            <li>Build the MVP with a focus on showcasing important features</li>
+          </ul>
+          <h3 class="h3-icon">
+            <img src="./images/icon6.png" alt="Person Icon" />
+            <span>User Persona</span>
+          </h3>
+          <p>
+            With all this information laid out, it was time to translate the
+            data from my user survey to create 2 primary personas. Both
+            completely different from each other, but would be the epitome of
+            Honeycomb’s target user
+          </p>
+          <table id="persona-table" class="desktop">
+            <tr>
+              <td>
+                <img src="./images/Isabel.png" alt="Isabel Persona Photo" />
+              </td>
+              <td>
+                <img src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Isabel</strong></td>
+              <td><strong>Jeremy</strong></td>
+            </tr>
+            <tr>
+              <td class="center">
+                Software & Asset Contract Manager<br />30 years old | New York,
+                NY
+              </td>
+              <td class="center">
+                Photographer & Travel Blogger<br />24 years old | Los Angeles,
+                CA
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Motivations</strong></td>
+              <td class="heading"><strong>Motivations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                As a Software Asset & Contract Manager at New York University,
+                Isabel leads a team and spends her time creating and sharing
+                projects with her employees to ensure that everyone’s on the
+                same page all the time. She’s also a graduate student who writes
+                papers and saves reading material in the cloud since it’s
+                convenient and in one central place.
+              </td>
+              <td>
+                Jeremy’s career brings him to all parts of the world and for
+                convenient travel, requires him to pack light. He’s thankful for
+                cloud storage since he can easily upload, back up and share
+                files between all his devices. He wants to be able to save all
+                his inspirations, write his blog posts and share his ideas with
+                all the creatives out in the world.
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Frustrations</strong></td>
+              <td class="heading"><strong>Frustrations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Categorizing files and bookmarks isn’t convenient</li>
+                  <li>Updating shared broken links after moving files</li>
+                  <li>
+                    Setting expirations & passwords for more sensitive documents
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Difficulty in locating a photo within his cloud storage
+                    platform
+                  </li>
+                  <li>
+                    Has to use multiple platforms to edit, upload and share work
+                  </li>
+                  <li>Big storage plans are expensive</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong
+                  >“It’d be nice to get more transparency when it comes to
+                  collaborative usage.”</strong
+                >
+              </td>
+              <td>
+                <strong
+                  >“Trying to find something using this interface is like
+                  searching for a needle in a haystack.”</strong
+                >
+              </td>
+            </tr>
+          </table>
+
+          <table id="persona-table" class="mobile">
+            <tr>
+              <td>
+                <img src="./images/Isabel.png" alt="Isabel Persona Photo" />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Isabel</strong></td>
+            </tr>
+            <tr>
+              <td class="center">
+                Software & Asset Contract Manager<br />30 years old | New York,
+                NY
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Motivations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                As a Software Asset & Contract Manager at New York University,
+                Isabel leads a team and spends her time creating and sharing
+                projects with her employees to ensure that everyone’s on the
+                same page all the time. She’s also a graduate student who writes
+                papers and saves reading material in the cloud since it’s
+                convenient and in one central place.
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Frustrations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Categorizing files and bookmarks isn’t convenient</li>
+                  <li>Updating shared broken links after moving files</li>
+                  <li>
+                    Setting expirations & passwords for more sensitive documents
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong
+                  >“It’d be nice to get more transparency when it comes to
+                  collaborative usage.”</strong
+                >
+              </td>
+            </tr>
+          </table>
+
+          <table id="persona-table" class="mobile">
+            <tr>
+              <td>
+                <img src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Jeremy</strong></td>
+            </tr>
+            <tr>
+              <td class="center">
+                Photographer & Travel Blogger<br />24 years old | Los Angeles,
+                CA
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Motivations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                Jeremy’s career brings him to all parts of the world and for
+                convenient travel, requires him to pack light. He’s thankful for
+                cloud storage since he can easily upload, back up and share
+                files between all his devices. He wants to be able to save all
+                his inspirations, write his blog posts and share his ideas with
+                all the creatives out in the world.
+              </td>
+            </tr>
+            <tr>
+              <td class="heading"><strong>Frustrations</strong></td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Difficulty in locating a photo within his cloud storage
+                    platform
+                  </li>
+                  <li>
+                    Has to use multiple platforms to edit, upload and share work
+                  </li>
+                  <li>Big storage plans are expensive</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong
+                  >“Trying to find something using this interface is like
+                  searching for a needle in a haystack.”</strong
+                >
+              </td>
+            </tr>
+          </table>
+
+          <div class="center-link">
+            <a
+              href="https://drive.google.com/file/d/1NTIAuf4mHk13D8OgCf4l4A8ef-2GmesH/view?usp=sharing"
+              target="_blank"
+              >VIEW USER PERSONAS HERE</a
+            >
+          </div>
+        </section>
+        <hr />
+        <section class="infoarch slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">
+              Part III: Information Architecture
+            </h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon7.png" alt="Flowchart Icon" />
+            <span>User Stories & Flow</span>
+          </h3>
+          <p>
+            After collecting and analyzing data and creating my personas, it was
+            easier for me to compile a
+            <span class="hover-link">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1_k-1lG6SXh0QasLPB4Vv_GaI3tj5w_cpWpjWmVZOhu0/edit?usp=sharing"
+                target="_blank"
+                >list of user stories</a
+              >
+            </span>
+            . I ranked these stories by importance and focused on high priority
+            tasks to reach the minimum viable product (MVP). These user stories
+            would later on be translated into user flows to better show how the
+            user would execute each task such as the example shown below:
+          </p>
+          <p>
+            <strong
+              >“As a new user, I want to create an account by signing up with my
+              email address + password of my choice”</strong
+            >
+          </p>
+          <img
+            src="./images/UserFlow_CloudStorage.png"
+            alt="User Flow Example"
+          />
+
+          <div class="center-link">
+            <a
+              href="https://whimsical.com/7qmbJTUbyLaE1B6K4iqgvc"
+              target="_blank"
+              >VIEW USER FLOWS HERE</a
+            >
+          </div>
+
+          <h3 class="h3-icon">
+            <img src="./images/icon8.png" alt="Browser Icon" />
+            <span>Site Map & Content Strategy</span>
+          </h3>
+          <p>
+            Now that I had an idea of what users were looking for in a platform
+            and how I wanted them to accomplish tasks, it was time to carefully
+            decide where a user would find a feature they’re looking for by
+            creating a
+            <span class="hover-link"
+              ><a
+                href="https://whimsical.com/DbhNVpayHi6PxCafmqYfXZ"
+                target="_blank"
+                >sitemap</a
+              ></span
+            >. This ultimately helped me stay true to the design decisions I
+            formed after research.
+          </p>
+          <br />
+          <img src="./images/sitemap-1.png" alt="Sitemap Preview" />
+          <p>
+            <br />
+            In addition to this, I had to draft what future customers would see,
+            read and most importantly, feel while using Honeycomb. Crafting
+            content strategy was made easier with the power of knowledge I had
+            acquired from the earlier stages of research, and would help during
+            the branding phase.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon9.png" alt="Pen Icon" />
+            <span>Sketches & Wireframes</span>
+          </h3>
+          <p>
+            My user flows allowed me to have a better idea on how the interface
+            should look. That being said, I started translating my initial ideas
+            into rough sketches which allowed me to explore ideas quickly and
+            efficiently.
+          </p>
+          <img src="./images/sketches-1.png" alt="Sketches Preview" />
+          <p>
+            I used my sketches, user stories and sitemap to create
+            <span class="hover-link"
+              ><a
+                href="https://www.figma.com/file/QqqTemKCGnDOzNeQLZI3b9zy/Cloud-Storage-Wireframes?node-id=0%3A1"
+                target="_blank"
+                >low-fidelity wireframes</a
+              ></span
+            >
+            in Figma that addressed the solution I had in mind. What was
+            important to me was that users could easily find what they’re
+            looking for - this is why having folders on the top and everything
+            grouped into file type would make it easier for a user to locate
+            what they needed, whenever they needed it.
+          </p>
+          <div class="block-images">
+            <div>
+              <img src="./images/wireframe1.png" alt="Wireframe Preview 1" />
+            </div>
+            <div>
+              <img src="./images/wireframe2.png" alt="Wireframe Preview 2" />
+            </div>
+          </div>
+
+          <div class="block-images">
+            <div>
+              <img src="./images/wireframe3.png" alt="Wireframe Preview 3" />
+            </div>
+            <div>
+              <img src="./images/wireframe4.png" alt="Wireframe Preview 4" />
+            </div>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon10.png" alt="Checklist Icon" />
+            <span>Usability Testing</span>
+          </h3>
+          <p>
+            Prior to moving on to branding and high-fidelity mockups, I needed
+            to consult with users through testing to see if my design decisions
+            made sense. I used inVision to conduct both remote and in-person
+            usability tests and wrote a test script so that my participants knew
+            what they were getting themselves into and what to look out for.
+          </p>
+          <img
+            class="inset-img"
+            src="./images/testingsession.png"
+            alt="Testing session image"
+          />
+          <p>
+            This was an important step since I was able to receive feedback
+            early on that would help me revise key action items. Here are some
+            comments and suggestions received:
+          </p>
+          <img
+            class="inset-img"
+            src="./images/usertest1.png"
+            alt="User Test 1 Preview"
+          />
+          <p>
+            “I like that the interface is simple - it almost feels familiar. But
+            I think the upload and create button is a bit confusing without
+            icons. Maybe there’s an easier way to combine this?” - User 1
+          </p>
+          <img
+            class="inset-img"
+            src="./images/usertest2.png"
+            alt="User Test 2 Preview"
+          />
+          <p>
+            “The expiration date and password feature is perfect, especially if
+            I can get a public link and set those parameters so that I can avoid
+            having to enter individual email addresses” - User 2
+          </p>
+          <img
+            class="inset-img"
+            src="./images/usertest3.png"
+            alt="User Test 3 Preview"
+          />
+          <p>
+            “I like that there are link categories but where would uncategorized
+            links go? The problem I run into is that I’m unable to categorize my
+            links when I’m in a hurry so it may lessen my need to add links here
+            if I’m forced to categorize it right away.” - User 3
+          </p>
+          <p></p>
+          <div class="center-link">
+            <a
+              href="https://invis.io/EPTN1DDHQUD#/369755830_Log_In_1"
+              target="_blank"
+              >VIEW LOW FIDELITY PROTOTYPE HERE</a
+            >
+          </div>
+        </section>
+        <hr />
+        <section class="branding slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part IV: Branding & Identity</h1>
+          </div>
+          <img
+            src="./images/HoneycombLogo-BG.png"
+            alt="Honeycomb Logo with background"
+          />
+          <h3 class="h3-icon">Why Honeycomb?</h3>
+          <p>
+            Science has already explained that it takes a lot of singular and
+            group work for bees to create honeycomb and there’s a beauty towards
+            the effort that bees have to put in to be able to come up with such
+            uniformly structured honeycomb. This is the representation that the
+            brand requires - ideating, creating and collaborating to come up
+            with amazing work, every single time. Whether it’s just an
+            individual looking for inspiration from publicly shared material so
+            she or he can create something genius to groups coming together and
+            tackling a big project, Honeycomb captures the concept of the brand.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon11.png" alt="Pencil and Ruler Icon" />
+            <span>Logo Design</span>
+          </h3>
+          <p>
+            Having decided the brand name, it was time to design a logo that
+            would best represent Honeycomb as a cloud storage and organization
+            service. I began this process by mind-mapping and sketching.
+          </p>
+          <div class="img-with-text">
+            <p>
+              To stay consistent with the honeycomb theme, I focused on infusing
+              pentagons in my logo. This decision led to bringing four pentagons
+              together to produce a bee which would be recognizable. All
+              pentagons coming together to form a bee represents the process of
+              working together to conjure an idea, create and execute.
+            </p>
+            <img src="./images/LogoSketches.png" alt="Logo Sketches" />
+          </div>
+
+          <h3 class="h3-icon">
+            <img src="./images/icon12.png" alt="Dropper Icon" />
+            <span>Color Palette</span>
+          </h3>
+          <img src="./images/ColorSwatches.png" alt="Color Swatches" />
+          <p>
+            Honeycomb’s identity is minimalist and playful yet trustworthy in
+            the cloud storage market. To best represent this, I chose the
+            following colors so that Honeycomb users would feel these
+            characteristics while on the platform. I selected 2 shades of blue
+            to reflect its trustworthiness but in shades that felt modern while
+            the orange and muted pale pink was chosen to imbibe energy and used
+            selectively throughout the platform.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon13.png" alt="Letter Icon" />
+            <span>Typography</span>
+          </h3>
+          <div class="typography">
+            <img src="./images/FontChoices.png" alt="Font Preview" />
+            <span
+              >Nunito and Alegreya were the typefaces that was selected for
+              Honeycomb. Nunito expressed the modern, clean and professional
+              look while Alegreya was chosen as a complementary typeface due to
+              its embellishments that helps balance the sans serif
+              characteristics of Nunito. When put together, it’s easy to read,
+              pleasant on the eyes and very professional.</span
+            >
+          </div>
+          <p></p>
+          <img
+            src="./images/StyleGuidePreview.png"
+            alt="Preview of the Style Guide"
+          />
+
+          <div class="center-link">
+            <a
+              href="https://drive.google.com/open?id=1BTwHrfmo1AWZzo4ICXy4_W8lUfuep_GT"
+              target="_blank"
+              >VIEW STYLE GUIDE HERE</a
+            >
+          </div>
+        </section>
+        <hr />
+        <section class="visualdesign slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part V: Visual Design</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon14.png" alt="Window Layout Icon" />
+            <span>High-fidelity Mockups</span>
+          </h3>
+          <p>
+            Using my low-fidelity wireframes, I created the layout of
+            Honeycomb’s interface focusing on the initial design decisions made
+            and coupled it with feedback received through user testing.
+          </p>
+          <img src="./images/HiFiMockup.png" alt="Mockup display" />
+          <h3 class="h3-icon">
+            <img src="./images/icon15.png" alt="Clipboard Icon" />
+            <span>Preference Testing</span>
+          </h3>
+          <p>
+            But that’s not where the road ends - I put my iterations to test by
+            creating several A/B tests on UsabilityHub. The following tests were
+            created to identify which display of elements and design choices
+            were most popular and favored to better refine Honeycomb’s design.
+          </p>
+          <ul>
+            <li class="hover-link">
+              <a
+                href="https://app.usabilityhub.com/tests/698adcb186cf/results/428a22e6bf67?%7B%22viewState%22:%7B%22isExpandedBySectionScreenshotId%22:%7B%22513946%22:true,%22513947%22:true%7D%7D%7D"
+                target="_blank"
+                >Landing page design preference test</a
+              >
+            </li>
+            <li class="hover-link">
+              <a
+                href="https://app.usabilityhub.com/tests/2a8a46e7033d/results/60cf490e8d3d"
+                target="_blank"
+                >Button placement preference test</a
+              >
+            </li>
+            <li class="hover-link">
+              <a
+                href="https://app.usabilityhub.com/tests/9f99884f3caa/results/5b85fcfe3602"
+                target="_blank"
+                >Sign up modal design preference test</a
+              >
+            </li>
+          </ul>
+          <p>
+            I applied the feedback received from preference tests to the design
+            due since the users’ opinions are important and beneficial.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon16.png" alt="Layout Icon" />
+            <span>Clickable Prototype</span>
+          </h3>
+          <p>
+            After receiving the results from my preference test, I went back to
+            inVision to create a prototype and conducted 2 remote and 1
+            in-person scenario-based usability test to better see the product’s
+            usability and understand users’ opinions. After analyzing the data,
+            I observed the following things:
+          </p>
+          <p></p>
+          <ul>
+            <li>
+              All testers were able to conclude that Honeycomb is a cloud
+              storage and collaborative platform
+            </li>
+            <li>The interface is straightforward and simple</li>
+            <li>
+              Publicly shared files feature is appealing to all participants
+            </li>
+            <li>
+              Color scheme is professional, easy on the eyes and exudes
+              trustworthiness
+            </li>
+            <li>
+              There were no distractions or unnecessary clutter and Honeycomb
+              has a very clean design
+            </li>
+          </ul>
+          <p>
+            However, the following changes still had to be made based off the
+            testers feedback:
+          </p>
+          <ol>
+            <li>
+              There were no distractions or unnecessary clutter and Honeycomb
+              has a very clean design
+            </li>
+            <li>
+              A “view all” option should be added to the dashboard: Testers
+              stated that because there’s a scroll option, a “view all” option
+              would make navigating the dashboard - and ultimately locating
+              files, an easier task.
+            </li>
+            <li>
+              The “share” button located in the document creator should be
+              rounded: Testers noticed that this was the only button that still
+              had sharp corners and recommended that the corners be rounded to
+              maintain consistency across the platform.
+            </li>
+          </ol>
+          <p>
+            Making these changes to the design finally paved a way for Honeycomb
+            to come to life.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon17.png" alt="Checkbox with Check Icon" />
+            <span>The Final Product</span>
+          </h3>
+          <div class="grid-img">
+            <div class="col">
+              <img
+                src="./images/Homepage.png"
+                alt="Screenshot of Homepage"
+                class="homepage"
+              />
+            </div>
+            <div class="col flex-col">
+              <img
+                src="./images/Dashboard1.png"
+                alt="Screenshot of Dashboard"
+                class="dashboard"
+              />
+              <img
+                class="dashboard-dropdown"
+                src="./images/Dashboard2.png"
+                alt="Screenshot of Dashboard with dropdown menu open"
+              />
+              <img
+                class="document-creator"
+                src="./images/Create1.png"
+                alt="Screenshot of document creator"
+              />
+              <img
+                class="public-file-search"
+                src="./images/Search1.png"
+                alt="Screenshot of public file search"
+              />
+            </div>
+          </div>
+
+          <div class="lets-talk-buttons project" style="margin-top: unset;">
+            <ul
+              class="flex-list"
+              style="display: flex; justify-content: center;"
+            >
+              <li style="width: unset;" class="plain-invertible">
+                <a
+                  style="padding: 0 16px;"
+                  target="_blank"
+                  href="https://www.figma.com/file/uwpPDV3AHv2An4fibhdLQe/Honeycomb-HiFi-Mockups"
+                  >VIEW HIGH FIDELITY MOCKUPS HERE</a
+                >
+              </li>
+              <li style="width: unset;" class="plain-invertible">
+                <a
+                  style="padding: 0 16px;"
+                  href="https://invis.io/78TUBC7BKTS"
+                  target="_blank"
+                  >VIEW FINAL PROTOTYPE HERE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <hr />
+        <section class="wrapup slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part VI: Wrapping it All Up!</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/icon18.png" alt="Teacher Icon" />
+            <span>What I Learned</span>
+          </h3>
+          <p>
+            <strong
+              >The importance of understanding and knowing what users want out
+              of a product</strong
+            >
+          </p>
+          <p>
+            Instead of going with my assumptions, I had to look to research in
+            order to identify the goals of my target audience, the pain points
+            they go through when trying to meet their goals and a solution that
+            would hopefully eradicate their current pain points in their
+            process.
+          </p>
+          <p><strong>Test, test, test and more tests!</strong></p>
+          <p>
+            User testing, whether it’s usability or preference tests hold the
+            key to successfully refine the product. At the end of the day, it’s
+            not about the client or the designer - the users are the core of the
+            product. What better way is there but to continuously conduct tests
+            to receive and gather feedback from users that would improve the
+            product?
+          </p>
+          <p><strong>Scope creep is scary and can happen anytime</strong></p>
+          <p>
+            Coming up with an MVP is harder to do and scope creep can happen at
+            anytime when many features/processes are considered. That being
+            said, the next time I’m on a project, I need to constantly remind
+            myself that I should design less user flows early on in the process
+            so I could spend more time focusing on testing and refining fewer
+            primary flows to ensure that everything is optimal and the best it
+            could be.
+          </p>
+          <h3 class="h3-icon">
+            <img src="./images/icon19.png" alt="Clock Icon" />
+            <span>If I Had More Time...</span>
+          </h3>
+          <p>
+            I would love to create additional pages to make the prototype more
+            realistic and exceptional for users. In addition to this, other key
+            features that I would’ve considered to add would be to showcase the
+            power of using the search field when looking at publicly shared
+            files so that users would better understand how this could work as a
+            resource for them as individuals and as a team.
+          </p>
+        </section>
+        <hr class="contact hr" />
+        <section class="contact project">
+          <h1>Let's talk!</h1>
+          <p>
+            Let's chat about how we can create stellar user experiences, or
+            anything and everything about UX over a cup of coffee. ☕
+          </p>
+          <div class="lets-talk-buttons">
+            <ul class="flex-list">
+              <li class="plain-invertible">
+                <a href="./contact.html">CONTACT</a>
+              </li>
+              <li class="plain-invertible">
+                <a
+                  href="https://drive.google.com/open?id=1VtnsMHQYZG0BQMnKRFiVQVcgBlJMx3O7"
+                  target="_blank"
+                  >DOWNLOAD RESUME</a
+                >
+              </li>
+            </ul>
+            <span class="return-to-top">
+              <a href="#top"><img src="./images/icons8-back_filled.png" alt="Return to top" /></a>
+              <a href="#top">Return to top</a>
+            </span>
+          </div>
+        </section>
+      </div>
+    </div>
     <footer>
       <div class="footer">
         <section class="footer">
