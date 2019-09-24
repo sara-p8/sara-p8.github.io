@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XKX7QHKHF"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3XKX7QHKHF"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-3XKX7QHKHF');
+      gtag("config", "G-3XKX7QHKHF");
     </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
     <meta
@@ -188,7 +193,10 @@
               </li>
             </ul>
             <span class="return-to-top">
-              <a href="#top"><img src="./images/icons8-back_filled.png" alt="Return to top" /></a>
+              <a href="#top"
+                ><img src="./images/icons8-back_filled.png" alt="Return to top"
+              /></a>
+
               <a href="#top">Return to top</a>
             </span>
           </div>
@@ -219,5 +227,11 @@
       </div>
     </footer>
     <script src="./scripts/main.js"></script>
+    <script>
+      /** Automatically close work link when pressed as it does not direct to a new page */
+      document
+        .querySelector('a[href="#work"]')
+        .addEventListener("click", toggleMenu);
+    </script>
   </body>
 </html>
