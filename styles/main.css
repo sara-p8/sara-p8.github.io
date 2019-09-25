@@ -88,6 +88,7 @@ td {
 
 #navigation-bar > ul {
   display: flex;
+  left: 0px;
 }
 
 #navigation-bar > ul > li {
@@ -357,22 +358,7 @@ table {
   width: 50px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1023px) {
-  header {
-    background: linear-gradient(180deg, #fbefeb 0%, #ffffff 100%);
-  }
-
-  .tools img {
-    width: 50%;
-  }
-
-  input[type="submit"],
-  .introduction > ul > li > a,
-  .lets-talk-buttons > ul > li > a,
-  .view-all-case-studies > span > a {
-    font-size: 12px;
-  }
-
+@media only sreen and (min-width: 320px) and (max-width: 767px) {
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
@@ -383,6 +369,119 @@ table {
     max-width: 304px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  header {
+    background: linear-gradient(180deg, #fbefeb 0%, #ffffff 100%);
+  }
+
+  .tools img {
+    width: 50%;
+  }
+
+  .hamburger {
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    z-index: 3;
+  }
+
+  .hamburger.is-active:hover,
+  .hamburger:hover {
+    opacity: 0.7;
+  }
+
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner:after,
+  .hamburger.is-active .hamburger-inner:before {
+    background-color: #ae8d92;
+  }
+
+  .hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  .hamburger-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #ae8d92;
+  }
+
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    display: block;
+    content: "";
+  }
+
+  .hamburger-inner:before {
+    top: -10px;
+  }
+
+  .hamburger-inner:after {
+    bottom: -10px;
+  }
+
+  .hamburger--slider .hamburger-inner {
+    top: 2px;
+  }
+
+  .hamburger--slider .hamburger-inner:before {
+    top: 10px;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+
+  .hamburger--slider .hamburger-inner:after {
+    top: 20px;
+  }
+
+  .hamburger--slider.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+  }
+
+  .hamburger--slider.is-active .hamburger-inner:before {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+  }
+
+  .hamburger--slider.is-active .hamburger-inner:after {
+    transform: translate3d(0, -20px, 0) rotate(-90deg);
+  }
+
+  input[type="submit"],
+  .introduction > ul > li > a,
+  .lets-talk-buttons > ul > li > a,
+  .view-all-case-studies > span > a {
+    font-size: 12px;
   }
 
   .img-with-text {
@@ -470,17 +569,23 @@ table {
 
   #navigation-bar > ul {
     position: fixed;
-    display: none;
     flex-direction: column;
     align-content: center;
     background: rgba(227, 216, 212, 0.85);
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 100%;
     margin: 0 auto;
     padding: 0;
     padding-top: 102px;
+    transition: left 0.6s ease-out;
+  }
+
+  #navigation-bar > ul.active {
+    display: flex;
+    left: 0px;
+    transition: left 0.6s ease-out;
   }
 
   #navigation-bar > ul > li {
@@ -565,7 +670,7 @@ table {
 
   #storage > img {
     width: 96px;
-    height: auto;
+    height: 100%;
   }
 
   .grid-img {
@@ -576,12 +681,6 @@ table {
     width: 100%;
     padding-bottom: 16px;
   }
-
-  .features-chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -590,7 +689,7 @@ table {
   }
 
   .project-description p {
-    max-width: 304px;
+    max-width: 748px;
   }
 
   .contact-page-link {
@@ -1206,4 +1305,62 @@ h1.rounded-background {
 
 .h3-icon span {
   padding: 0 10px;
+}
+
+.features-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; */
+  height: 50px;
+  width: 50px;
+}
+
+.menu-toggle.active {
+  /* height: 2px; */
+  display: block;
+}
+
+.menu-toggle > * {
+  transition: all 1s ease;
+}
+.menu-toggle > div {
+  width: 50px;
+  height: 2px;
+  background: #ae8d92;
+  /* margin: 10px 0; */
+}
+
+.menu-toggle.active > div {
+  margin: unset;
+}
+
+.menu-toggle.active > div:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.menu-toggle.active > div:nth-child(2) {
+  width: 0px;
+  transition: width 0.7s ease;
+}
+
+.menu-toggle.active > div:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+#light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ae8d92;
+  opacity: 0.6;
 }
