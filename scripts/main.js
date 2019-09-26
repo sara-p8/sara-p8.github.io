@@ -187,11 +187,22 @@ var mobileMenuIsOpen = false;
 var closeIcon = "./images/icons8-delete_sign.png";
 var menuIcon = "./images/icons8-menu 2.png";
 
+const menu = document.querySelector(".hamburger");
+menu.addEventListener("click", toggleMenu);
+
 function toggleMenu() {
-  var display = menuUl.style.display;
-  menuUl.style.display = display === "flex" ? "none" : "flex";
-  menuImg.src = menuUl.style.display == "flex" ? closeIcon : menuIcon;
-  mobileMenuIsOpen = menuUl.style.display == "flex" ? true : false;
+  var isActive = menuUl.classList.contains("active");
+  if (isActive) {
+    menuUl.classList.remove("active");
+  } else {
+    menuUl.classList.add("active");
+  }
+
+  if (menu.classList.contains("is-active")) {
+    menu.classList.remove("is-active");
+  } else {
+    menu.classList.add("is-active");
+  }
 }
 
 window.onresize = function() {
@@ -215,3 +226,30 @@ function resetMenu() {
     menuIsOpen = T;
   }
 }
+
+/** Lightbox */
+(function() {
+  const body = document.querySelector("body");
+  const lightBox = document.createElement("div");
+  lightBox.id = "light-box";
+
+  function getPageImages() {
+    const images = Array.from(document.images);
+    return images;
+  }
+  function removeExcludedImages(imageset) {
+    return imageset;
+  }
+
+  function getExcludedImages() {
+    return [
+      "logo-colored.png",
+      "github.svg",
+      "gmail.svg",
+      "linkedin.svg",
+      "twitter.svg"
+    ];
+  }
+
+  body.appendChild(lightBox);
+});

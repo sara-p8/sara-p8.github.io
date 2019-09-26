@@ -46,8 +46,10 @@
           <a href="./index.html"
             ><img class="logo" src="./images/Logo-colored.png"
           /></a>
-          <div class="menu">
-            <img src="./images/icons8-menu 2.png" alt="Menu" />
+          <div class="hamburger hamburger--slider js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
           <ul>
             <li class="active">
@@ -229,6 +231,7 @@
     <script src="./scripts/main.js"></script>
     <script>
       /** Automatically close work link when pressed as it does not direct to a new page */
+      (function() {})();
       document
         .querySelector('a[href="#work"]')
         .addEventListener("click", toggleMenu);

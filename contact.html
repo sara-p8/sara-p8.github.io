@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XKX7QHKHF"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3XKX7QHKHF"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-3XKX7QHKHF');
+      gtag("config", "G-3XKX7QHKHF");
     </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
     <meta
@@ -41,8 +46,10 @@
           <a href="./index.html"
             ><img class="logo" src="./images/Logo-colored.png"
           /></a>
-          <div class="menu">
-            <img src="./images/icons8-menu 2.png" alt="Menu" />
+          <div class="hamburger hamburger--slider js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
           <ul>
             <li>
@@ -82,11 +89,7 @@
                 name="message"
                 placeholder="EMAIL ADDRESS"
               /><br />
-              <textarea
-                name="message"
-                placeholder="MESSAGE"
-                rows="6"
-              ></textarea
+              <textarea name="message" placeholder="MESSAGE" rows="6"></textarea
               ><br />
               <input type="submit" value="SEND MESSAGE" />
             </form>
