@@ -370,6 +370,10 @@ table {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .bio {
+    max-width: 303px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -545,7 +549,6 @@ table {
 
   .bio {
     margin: 0 auto;
-    max-width: 303px;
   }
 
   .copyright {
@@ -847,9 +850,14 @@ table {
   h1 {
     font-size: 34px;
   }
+
   header {
     padding: 0 120px;
     padding-bottom: 10px;
+  }
+
+  #contact-body > header {
+    padding-bottom: 240px;
   }
 
   .logo {
@@ -1478,6 +1486,6 @@ li.active > a > div {
   width: 100%;
   background-color: black;
   height: 150%;
-  background: linear-gradient(45deg, #AE8D92, #E3D8D4);
+  background: linear-gradient(45deg, #ae8d92, #e3d8d4);
   z-index: -1;
 }
