@@ -10,7 +10,7 @@ html {
 html,
 body {
   color: #333333;
-  /* overflow-y: scroll; */
+
   height: 100%;
   font-size: 17px;
   line-height: 25px;
@@ -106,7 +106,6 @@ td {
 
 #navigation-bar > ul > li.border:hover:after {
   width: 0px; /** Prevents contact menu item from having underline hover effect */
-  /* background: rgba(187, 167, 161, 0.7); */
 }
 
 #navigation-bar > ul > li > a {
@@ -372,7 +371,7 @@ table {
   }
 
   .bio {
-    max-width: 303px;
+    max-width: 304px;
   }
 }
 
@@ -380,6 +379,22 @@ table {
   .tools img {
     width: 35%;
     height: 100%;
+  }
+
+  .bio {
+    max-width: 565px;
+  }
+
+  .slim .rounded-b-div,
+  .slim .h3-icon,
+  .slim ul,
+  .slim ol,
+  .slim p,
+  .slim div.roles,
+  .slim td {
+    max-width: 565px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -697,6 +712,18 @@ table {
 }
 
 @media only screen and (min-width: 1024px) {
+  .slim .rounded-b-div,
+  .slim .h3-icon,
+  .slim ul,
+  .slim ol,
+  .slim p,
+  .slim div.roles,
+  .slim td {
+    max-width: 757px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .background-container {
     margin: 0 -120px;
   }
@@ -782,7 +809,6 @@ table {
   .research-section > .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* padding: 32px; */
   }
 
   .design-process > .row {
@@ -1157,7 +1183,6 @@ section.lessons > ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: -1; * Ensures this is moved behind the menu */
 }
 
 #layered-images > img:nth-child(1) {
@@ -1332,15 +1357,11 @@ h1.rounded-background {
 }
 
 .menu-toggle {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
   height: 50px;
   width: 50px;
 }
 
 .menu-toggle.active {
-  /* height: 2px; */
   display: block;
 }
 
@@ -1351,7 +1372,6 @@ h1.rounded-background {
   width: 50px;
   height: 2px;
   background: #ae8d92;
-  /* margin: 10px 0; */
 }
 
 .menu-toggle.active > div {
@@ -1381,11 +1401,8 @@ h1.rounded-background {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: linear-gradient(180deg, #ae8d92 15%, transparent 100%); */
-  background: rgba(51, 51, 51, 0.9);
 
-  /* background-color: #ae8d92; */
-  /* opacity: 0.9; */
+  background: rgba(51, 51, 51, 0.9);
 }
 
 #light-box > div {
@@ -1488,4 +1505,19 @@ li.active > a > div {
   height: 150%;
   background: linear-gradient(45deg, #ae8d92, #e3d8d4);
   z-index: -1;
+}
+
+img light-box-item {
+  cursor: pointer;
+}
+
+.show-on-scroll {
+  opacity: 0;
+  margin-left: 20px;
+}
+
+.show-on-scroll.is-visible {
+  opacity: 1;
+  transition: all 2.5s ease;
+  margin-left: 0px;
 }
