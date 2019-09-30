@@ -381,6 +381,11 @@ table {
     height: 100%;
   }
 
+  .inset-img {
+    padding: 0 120px;
+    width: 100%;
+  }
+
   .bio {
     max-width: 565px;
   }
@@ -396,6 +401,10 @@ table {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .color-swatches img {
+    max-width: 565px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -408,6 +417,10 @@ table {
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   header {
     background: linear-gradient(180deg, #fbefeb 0%, #ffffff 100%);
+  }
+
+  .inset-img {
+    width: 100%;
   }
 
   .hamburger {
@@ -724,8 +737,17 @@ table {
     margin-left: auto;
   }
 
+  img[alt="Color Swatches"] {
+    padding: 0 64px;
+  }
+
   .background-container {
     margin: 0 -120px;
+  }
+
+  .inset-img {
+    padding: 0 120px;
+    width: 100%;
   }
 
   .project-description p {
@@ -749,7 +771,6 @@ table {
     font-size: 14px;
   }
 
-  .research-section,
   #persona-table.desktop {
     margin: 0 auto;
     max-width: 757px;
@@ -814,7 +835,12 @@ table {
   }
 
   .research-section {
-    margin: 40px 0;
+    max-width: 757px;
+    margin: 40px auto;
+  }
+
+  .color-swatches img {
+    max-width: 757px;
   }
   .research-section > .row {
     display: grid;
@@ -1297,12 +1323,8 @@ td.center {
   height: auto;
 }
 
-.inset-img {
-  padding: 0 120px;
-  width: 100%;
-}
-
-section.branding > img {
+section.branding > img,
+section.branding > .color-swatches > img {
   width: 100%;
 }
 .visualdesign > img {
@@ -1311,10 +1333,6 @@ section.branding > img {
 
 .typography > span {
   padding-left: 24px;
-}
-
-img[alt="Color Swatches"] {
-  padding: 0 64px;
 }
 
 .desktop tr {
