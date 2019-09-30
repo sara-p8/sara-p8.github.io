@@ -748,8 +748,18 @@ table {
   .view-all-case-studies > span > a {
     font-size: 14px;
   }
+
+  .research-section,
+  #persona-table.desktop {
+    margin: 0 auto;
+    max-width: 757px;
+  }
+
+  .img-with-text,
   .typography {
     display: flex;
+    margin: 0 auto;
+    max-width: 757px;
   }
 
   .typography > img {
