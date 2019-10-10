@@ -212,25 +212,12 @@ window.onresize = function() {
     // this.menuUl.style.display = this.mobileMenuIsOpen ? "flex" : "none";
   }
 };
-function resetMenu() {
-  menuIsOpen = false;
-  if (window.innerWidth < 1024) {
-    if (menuIsOpen) {
-      menuImg.src = closeIcon;
-      menuUl.style.display = "";
-    } else {
-      menuImg.src = menuIcon;
-      menuUl.style.display = "none";
-    }
-  } else {
-    menuIsOpen = T;
-  }
-}
 
 /** Lightbox */
 (function() {
   const imageHolders = [];
   let images = getPageImages();
+  if (!images.length) return;
   const body = document.querySelector("body");
   const lightBox = document.createElement("div");
   lightBox.id = "light-box";
@@ -239,11 +226,28 @@ function resetMenu() {
 
   lightBox.appendChild(getBody());
 
-  lightBox.appendChild(getFooter());
+  // lightBox.appendChild(getFooter());
 
   function getPageImages() {
-    const images = Array.from(document.images).map(img => img.src);
+    const images = Array.from(
+      document.querySelectorAll("img[galleryItem]")
+    ).map(img => img.src);
     return images;
+  }
+
+  function toggleLightbox() {
+    const lightBox = document.querySelector("#light-box");
+
+    const isActive = !(lightBox.style.display == "none");
+    if (isActive) {
+      lightBox.style.display = "none";
+
+      document.querySelector(".hamburger").style.display = "unset";
+    } else {
+      lightBox.style.display = "flex";
+
+      // document.querySelector(".hamburger").style.display = "none";
+    }
   }
 
   function getHeader() {
@@ -296,8 +300,11 @@ function resetMenu() {
       });
       imgDiv.appendChild(innerImgDiv);
     });
-
+    const left = -1 * 50 * 0 + (window.innerWidth / 2 - 25) + "px";
+    imgDiv.style.left = left;
+    imgDiv.querySelector("div").classList.add("active");
     footer.appendChild(imgDiv);
+
     return footer;
   }
 
@@ -305,20 +312,20 @@ function resetMenu() {
     return imageset;
   }
 
-  function getExcludedImages() {
-    return [
-      "logo-colored.png",
-      "github.svg",
-      "gmail.svg",
-      "linkedin.svg",
-      "twitter.svg"
-    ];
-  }
-
   body.appendChild(lightBox);
-  lightBox.style.display = "none";
+  toggleLightbox();
 
   document.querySelector("#light-box a.close").addEventListener("click", () => {
     document.querySelector("#light-box").style.display = "none";
+  });
+
+  document.querySelectorAll("img[galleryItem]").forEach(img => {
+    img.addEventListener("click", function() {
+      document.querySelector(".lb-body img").src = event.target.src.replace(
+        /\bmobile\b/,
+        ""
+      );
+      toggleLightbox();
+    });
   });
 })();

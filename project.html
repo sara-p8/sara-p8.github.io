@@ -15,6 +15,25 @@
 
       gtag("config", "G-3XKX7QHKHF");
     </script>
+
+    <!-- Optimized image loading -->
+    <script>
+      function loadResponsiveImages() {
+        if (window.innerWidth < 480) {
+          Array.from(document.images).forEach(img => {
+            const src = img.src;
+            if (src.match(/\.(jpg|png)$/)) {
+              img.src = src.replace(/images\/(.*)/, "images/mobile/$1");
+            }
+          });
+        }
+        const images = document.images;
+
+        window.removeEventListener("load", loadResponsiveImages);
+      }
+
+      window.addEventListener("load", loadResponsiveImages);
+    </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
     <!-- Reset -->
     <meta
@@ -162,7 +181,9 @@
         </section>
         <div class="view-all-case-studies">
           <span class="plain-invertible">
-            <a target= "_blank" href="https://invis.io/78TUBC7BKTS">VIEW INVISION PROTOTYPE</a>
+            <a target="_blank" href="https://invis.io/78TUBC7BKTS"
+              >VIEW INVISION PROTOTYPE</a
+            >
           </span>
         </div>
 
@@ -347,12 +368,17 @@
             and looking for a specific pinned item becomes a difficult feat due
             to many pin boards or uncategorized pins.
           </p>
-          <div class="center-link">
-            <a
-              href="https://drive.google.com/open?id=1o01ZF_KEP5aZUK6i4fr6cHEYPbHzTdE-HVdYJOBjwP0"
-              target="_blank"
-              >VIEW COMPETITIVE ANALYSIS HERE</a
-            >
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="https://drive.google.com/open?id=1o01ZF_KEP5aZUK6i4fr6cHEYPbHzTdE-HVdYJOBjwP0"
+                  target="_blank"
+                  >VIEW COMPETITIVE ANALYSIS HERE</a
+                >
+              </span>
+            </div>
           </div>
 
           <p>
@@ -392,10 +418,18 @@
           <table id="persona-table" class="desktop">
             <tr>
               <td>
-                <img src="./images/Isabel.png" alt="Isabel Persona Photo" />
+                <img
+                  galleryItem
+                  src="./images/Isabel.png"
+                  alt="Isabel Persona Photo"
+                />
               </td>
               <td>
-                <img src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
+                <img
+                  galleryItem
+                  src="./images/Jeremy.png"
+                  alt="Jeremy Persona Photo"
+                />
               </td>
             </tr>
             <tr>
@@ -480,7 +514,7 @@
           <table id="persona-table" class="mobile">
             <tr>
               <td>
-                <img src="./images/Isabel.png" alt="Isabel Persona Photo" />
+                <img galleryItem src="./images/Isabel.png" alt="Isabel Persona Photo" />
               </td>
             </tr>
             <tr>
@@ -532,7 +566,7 @@
           <table id="persona-table" class="mobile">
             <tr>
               <td>
-                <img src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
+                <img galleryItem src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
               </td>
             </tr>
             <tr>
@@ -584,12 +618,16 @@
             </tr>
           </table>
 
-          <div class="center-link">
-            <a
-              href="https://drive.google.com/file/d/1NTIAuf4mHk13D8OgCf4l4A8ef-2GmesH/view?usp=sharing"
-              target="_blank"
-              >VIEW USER PERSONAS HERE</a
-            >
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="https://drive.google.com/file/d/1NTIAuf4mHk13D8OgCf4l4A8ef-2GmesH/view?usp=sharing"
+                  target="_blank"
+                  >VIEW USER PERSONAS HERE</a
+                >
+              </span>
+            </div>
           </div>
         </section>
         <hr />
@@ -624,17 +662,20 @@
               email address + password of my choice”</strong
             >
           </p>
-          <img
+          <img galleryItem
             src="./images/UserFlow_CloudStorage.png"
             alt="User Flow Example"
           />
-
-          <div class="center-link">
-            <a
-              href="https://whimsical.com/7qmbJTUbyLaE1B6K4iqgvc"
-              target="_blank"
-              >VIEW USER FLOWS HERE</a
-            >
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="https://whimsical.com/7qmbJTUbyLaE1B6K4iqgvc"
+                  target="_blank"
+                  >VIEW USER FLOWS HERE</a
+                >
+              </span>
+            </div>
           </div>
 
           <h3 class="h3-icon">
@@ -656,7 +697,7 @@
             formed after research.
           </p>
           <br />
-          <img src="./images/cloudsitemap.png" alt="Sitemap Preview" />
+          <img galleryItem src="./images/cloudsitemap.png" alt="Sitemap Preview" />
           <p>
             <br />
             In addition to this, I had to draft what future customers would see,
@@ -761,12 +802,16 @@
             if I’m forced to categorize it right away.” - User 3
           </p>
           <p></p>
-          <div class="center-link">
-            <a
-              href="https://invis.io/EPTN1DDHQUD#/369755830_Log_In_1"
-              target="_blank"
-              >VIEW LOW FIDELITY PROTOTYPE HERE</a
-            >
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="https://invis.io/EPTN1DDHQUD#/369755830_Log_In_1"
+                  target="_blank"
+                  >VIEW LOW FIDELITY PROTOTYPE HERE</a
+                >
+              </span>
+            </div>
           </div>
         </section>
         <hr />
@@ -814,7 +859,12 @@
             <img src="./images/icon12.png" alt="Dropper Icon" />
             <span>Color Palette</span>
           </h3>
-          <img src="./images/ColorSwatches.png" alt="Color Swatches" />
+          <div
+            class="color-swatches"
+            style="display: flex; justify-content: center"
+          >
+            <img src="./images/ColorSwatches.png" alt="Color Swatches" />
+          </div>
           <p>
             Honeycomb’s identity is minimalist and playful yet trustworthy in
             the cloud storage market. To best represent this, I chose the
@@ -844,13 +894,16 @@
             src="./images/StyleGuidePreview.png"
             alt="Preview of the Style Guide"
           />
-
-          <div class="center-link">
-            <a
-              href="https://drive.google.com/open?id=1BTwHrfmo1AWZzo4ICXy4_W8lUfuep_GT"
-              target="_blank"
-              >VIEW STYLE GUIDE HERE</a
-            >
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="https://drive.google.com/open?id=1BTwHrfmo1AWZzo4ICXy4_W8lUfuep_GT"
+                  target="_blank"
+                  >VIEW STYLE GUIDE HERE</a
+                >
+              </span>
+            </div>
           </div>
         </section>
         <hr />

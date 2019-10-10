@@ -75,7 +75,7 @@ td {
 .menu > img {
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  177cursor: pointer;
   opacity: 0.85;
 }
 
@@ -178,7 +178,7 @@ td {
   list-style-type: none;
   color: #ffffff;
   background-color: #ccb8bb;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 4px 12px;
   font-size: 14px;
   margin-bottom: 4px;
@@ -620,13 +620,13 @@ table {
     margin: 0 auto;
     padding: 0;
     padding-top: 102px;
-    transition: left 0.6s ease-out;
+    transition: left 0.2s ease-out;
   }
 
   #navigation-bar > ul.active {
     display: flex;
     left: 0px;
-    transition: left 0.6s ease-out;
+    transition: left 0.2s ease-out;
   }
 
   #navigation-bar > ul > li {
@@ -973,7 +973,7 @@ table {
   }
 
   .underline > li:hover:after {
-    width: 90%; /** content extends beyond the borders of the button f*/
+    width: 90%; /** content extends beyond the borders of the button*/
   }
 
   .underline > li {
@@ -1126,7 +1126,34 @@ table {
   background: linear-gradient(to top, #ae8d92 50%, #fff 50%);
   background-size: 100% 200%;
   color: #333333;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+}
+
+.center-link-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.center-link {
+  display: inline-block;
+}
+.center-link > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center-link > span:after {
+  width: 0%;
+  height: 2px;
+  background-color: #bba7a1;
+  content: "";
+  transition: width 0.3s;
+}
+
+.center-link > span:hover:after {
+  width: 100%;
 }
 
 #cfm-group a:hover,
@@ -1372,6 +1399,7 @@ h1.rounded-background {
 .h3-icon {
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 
 .h3-icon span {
