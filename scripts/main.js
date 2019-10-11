@@ -242,11 +242,11 @@ window.onresize = function() {
     if (isActive) {
       lightBox.style.display = "none";
 
-      document.querySelector(".hamburger").style.display = "unset";
+      document.querySelector(".hamburger").style.display = "";
     } else {
       lightBox.style.display = "flex";
 
-      // document.querySelector(".hamburger").style.display = "none";
+      document.querySelector(".hamburger").style.display = "none";
     }
   }
 
@@ -316,7 +316,8 @@ window.onresize = function() {
   toggleLightbox();
 
   document.querySelector("#light-box a.close").addEventListener("click", () => {
-    document.querySelector("#light-box").style.display = "none";
+    // document.querySelector("#light-box").style.display = "none";
+    toggleLightbox();
   });
 
   document.querySelectorAll("img[galleryItem]").forEach(img => {
