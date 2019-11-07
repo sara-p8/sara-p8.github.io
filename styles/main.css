@@ -37,6 +37,10 @@ p {
   line-height: 29px;
 }
 
+.role p {
+  line-height: 25px;
+}
+
 hr {
   margin: 80px 0;
   border: 1px solid #ae8d92;
@@ -45,7 +49,6 @@ hr {
 h1 {
   font-weight: normal;
   font-size: 50px;
-  line-height: 70px;
 }
 
 h2 {
@@ -55,7 +58,6 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
   line-height: 25px;
@@ -68,14 +70,14 @@ td {
 
 .center-child {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .menu > img {
   width: 30px;
   height: 30px;
-  177cursor: pointer;
+  cursor: pointer;
   opacity: 0.85;
 }
 
@@ -358,13 +360,25 @@ table {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  #meshi-logo {
+    height: 92px;
+  }
+
+  .user-metrics > .row > .col:nth-child(3) {
+    flex-basis: 100%;
+    padding-left: 0px;
+  }
+
+  .final-product,
+  .user-metrics,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
   .slim ol,
   .slim p,
   .slim div.roles,
-  .slim td {
+  .slim td,
+  .slim hr {
     max-width: 304px;
     margin-right: auto;
     margin-left: auto;
@@ -390,13 +404,16 @@ table {
     max-width: 565px;
   }
 
+  .final-product,
+  .user-metrics,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
   .slim ol,
   .slim p,
   .slim div.roles,
-  .slim td {
+  .slim td,
+  .slim hr {
     max-width: 565px;
     margin-right: auto;
     margin-left: auto;
@@ -415,8 +432,110 @@ table {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .case-studies a > img {
+    width: 303px;
+    height: 176px;
+  }
+
+  .meshi.view .flex-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    line-height: 40px;
+  }
+
+  .meshi.view li {
+    width: 100% !important;
+    /* margin: unset !important; */
+  }
+
+  video {
+    display: block;
+    width: 160px;
+    height: 315px;
+    margin: 0 auto;
+  }
+  .target-images-1 img {
+    width: 116px !important;
+    height: 251px !important;
+  }
+
+  img.ios-screen-resolution {
+    width: 116px !important;
+    height: 251px !important;
+  }
+
+  img.ios-device-resolution {
+    width: 160px !important;
+    height: 314px !important;
+  }
+
+  img[desktop] {
+    display: none;
+  }
+  img[mobile] {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+  }
+  .role > .inline {
+    display: flex;
+    align-items: center;
+  }
+
+  .role > .inline > h3 {
+    margin: 0 16px;
+  }
+
+  #meshi-logo {
+    height: 92px;
+  }
+
+  .wireframe-gallery {
+    display: flex;
+    overflow: scroll;
+    /* position: relative; */
+  }
+
+  .wireframe-gallery > img {
+    height: 411px;
+    padding: 0 8px;
+  }
+
+  .wireframe-gallery img:first-child {
+    padding-left: 0px;
+  }
+
+  .wireframe-gallery img:last-child {
+    padding-right: 0px;
+  }
+
+  .carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .carousel > .left,
+  .carousel > .right {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   header {
     background: linear-gradient(180deg, #fbefeb 0%, #ffffff 100%);
+  }
+
+  section.linking {
+    display: none;
   }
 
   .inset-img {
@@ -437,7 +556,7 @@ table {
     color: inherit;
     border: 0;
     background-color: transparent;
-    z-index: 3;
+    z-index: 6;
   }
 
   .hamburger.is-active:hover,
@@ -725,13 +844,65 @@ table {
 }
 
 @media only screen and (min-width: 1024px) {
+  .case-studies a > img {
+    width: 380px;
+    height: 218px;
+  }
+
+  .final-product > .row {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    line-height: 70px;
+  }
+
+  video {
+    width: 320px;
+    height: 630px;
+  }
+
+  .inline > h3 {
+    margin: 16px 0;
+  }
+
+  img.ios-screen-resolution {
+    width: 315px !important;
+    height: 679px !important;
+  }
+
+  img.ios-device-resolution {
+    width: 320px !important;
+    height: 630px !important;
+  }
+
+  .target-images-1 img {
+    width: 315px !important;
+    height: 679px !important;
+  }
+
+  #meshi-logo {
+    height: 200px;
+  }
+
+  img[mobile] {
+    position: fixed;
+  }
+
+  section.mobile-linking {
+    display: none;
+  }
+
+  .final-product,
+  .user-metrics,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
   .slim ol,
   .slim p,
   .slim div.roles,
-  .slim td {
+  .slim td,
+  .slim hr {
     max-width: 757px;
     margin-right: auto;
     margin-left: auto;
@@ -807,6 +978,29 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    line-height: 23px;
+  }
+
+  .wireframe-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 411px);
+    justify-content: center;
+  }
+
+  .wireframe-gallery > img {
+    object-fit: contain;
+    display: block;
+    height: 100%;
+  }
+
+  .wireframe-gallery.with-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wireframe-gallery.with-4 > img {
+    margin: 0 8px;
   }
 
   #contact-body > footer {
@@ -1092,6 +1286,13 @@ table {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .case-studies a > img {
+    width: 545px;
+    height: 313px;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .project-main {
     margin: 0 16px;
@@ -1255,7 +1456,8 @@ section.lessons > ol {
 
 #layered-images > img:nth-child(2) {
   position: absolute;
-  width: 50%;
+  bottom: 0;
+  max-width: 80%;
   text-align: center;
 }
 
@@ -1284,10 +1486,6 @@ section.lessons > ol {
 .roles tr td {
   width: 33%;
   text-align: center;
-}
-
-#main section h3 {
-  text-transform: uppercase;
 }
 
 .research td {
@@ -1339,13 +1537,10 @@ td.center {
 
 .block-images {
   display: flex;
-}
-.block-images > div {
-  width: 50%;
-  padding: 16px;
+  justify-content: center;
 }
 
-.block-images > div > img {
+.block-images img {
   width: 100%;
   height: auto;
 }
@@ -1578,4 +1773,156 @@ img light-box-item {
   opacity: 1;
   transition: all 2.5s ease;
   margin-left: 0px;
+}
+
+.case-studies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -24px;
+}
+
+.case-studies > section {
+  margin-top: 24px;
+}
+
+.case-studies > section a > img {
+  object-fit: contain;
+}
+.linking-images,
+.linking-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linking-images > div {
+  width: 50%;
+  height: 282px;
+  display: flex;
+  justify-content: center;
+}
+
+.linking-images img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.linking-links > div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+section .linking a,
+section .mobile-linking a {
+  text-transform: none;
+  font-size: 17px;
+}
+
+.center-link > img:first-child {
+  margin-right: 8px;
+}
+
+.center-link > img:last-child {
+  margin-left: 8px;
+}
+.linking-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-linking .previous,
+.mobile-linking .next {
+  display: flex;
+}
+
+.user-metrics {
+  margin-bottom: 40px;
+}
+
+.user-metrics > span {
+  font-weight: 600;
+}
+
+.user-metrics > .row {
+  display: flex;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.user-metrics > .row > .col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 8px 16px;
+}
+
+.user-metrics > .row > .col:first-child {
+  padding-left: 0px;
+}
+
+.user-metrics > .row > .col:last-child {
+  padding-right: 0px;
+}
+
+.user-metrics > .row > .col > span:nth-child(1) {
+  font-size: 36px;
+  font-weight: 600;
+  color: #ae8d92;
+  line-height: 42px;
+}
+
+#persona-table img {
+  width: 180px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.final-product > .row > .col {
+  margin: 16px;
+}
+
+.final-product > .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.final-product h3 {
+  text-transform: none !important;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.project-description.meshi {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .project-description.meshi + div {
+    margin-top: 160px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .project-description.meshi + div {
+    margin-top: 120px !important;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .project-description.meshi + div {
+    margin-top: 60px !important;
+  }
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
 }

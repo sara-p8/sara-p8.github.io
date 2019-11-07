@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3XKX7QHKHF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3XKX7QHKHF");
+    </script>
+
+    <!-- Optimized image loading -->
+    <script>
+      function loadResponsiveImages() {
+        if (window.innerWidth < 480) {
+          Array.from(document.images).forEach(img => {
+            const src = img.src;
+            if (src.match(/\.(jpg|png)$/)) {
+              img.src = src.replace(/images\/(.*)/, "images/mobile/$1");
+            }
+          });
+        }
+        const images = document.images;
+
+        window.removeEventListener("load", loadResponsiveImages);
+      }
+
+      window.addEventListener("load", loadResponsiveImages);
+    </script>
+    <title>Sara Papa | UX/UI Designer Portfolio</title>
+    <!-- Reset -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background: none;">
+    <header style="background: #F9F3F1;" id="top">
+      <div class="navigation-container">
+        <nav id="navigation-bar">
+          <a href="./index.html"
+            ><img class="logo" src="./images/Logo-colored.png"
+          /></a>
+          <div class="hamburger hamburger--slider js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <ul style="z-index:1;">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active">
+              <a href="./index.html#work">Work</a>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li id="nav-li-contact" class="border">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <section class="introduction">
+          <div style="display: flex; justify-content: center;">
+            <h1>BusyBus</h1>
+          </div>
+
+          <div class="project-description">
+            <p>
+              <strong>A better commuting experience</strong><br />
+              BusyBus provides its users with reliable bus transportation
+              information such as routes, times and directions.
+            </p>
+          </div>
+
+          <div id="layered-images">
+            <img
+              id="honey-comb-first-look"
+              src="./images/busybus/busybushero.png"
+              alt="Honeycomb First Look"
+            />
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <div id="main" class="project-main" id="main">
+      <div class="container">
+        <div class="project-background"></div>
+        <section class="roles">
+          <div class="role">
+            <img src="./images/meshi/sectiontitle/designrole.svg" alt="Role Icon" /><br />
+            <h3>Design Role</h3>
+
+            <p>UX Design</p>
+            <p>Visual Design</p>
+            <p>Frontend</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="role">
+            <img src="./images/meshi/sectiontitle/designdeliverables.svg" alt="Browser Icon" /><br />
+            <h3>Design Deliverables</h3>
+            <p>User Research</p>
+            <p>Competitive Analysis</p>
+            <p>User Stories</p>
+            <p>Wireframes</p>
+            <p>Visual Design</p>
+            <p>Usability Testing</p>
+            <p>High Fidelity Mockups</p>
+            <p>Basic Frontend Development</p>
+          </div>
+          <div class="role">
+            <img
+              src="./images/meshi/sectiontitle/durationtools.svg"
+              alt="Monitor Icon"
+            /><br />
+            <h3>Duration & Tools</h3>
+            <p>3 Weeks</p>
+
+            <div class="hr-div"></div>
+            <p>Figma</p>
+            <p>Marvel</p>
+            <p>Adobe Photoshop</p>
+            <p>Github</p>
+            <p>Atom</p>
+            <p></p>
+            <p></p>
+          </div>
+        </section>
+        <div class="view-all-case-studies">
+          <span class="plain-invertible">
+            <a target="_blank" href="http://bit.ly/2JpIgvG"
+              >VIEW GITHUB PROTOTYPE</a
+            >
+          </span>
+        </div>
+
+        <hr />
+        <section class="overview slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part I: Overview</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/whatismeshi.svg" alt="Notepad Icon" />
+            <span>What is BusyBus?</span>
+          </h3>
+          <p>
+            With so many bus stations, different routes and times being added or
+            changed, it’s hard to keep track of which bus you should take and
+            figure out the fastest way to basically anywhere. The app’s main
+            priority is to provide as much information in a simple and intuitive
+            platform.
+          </p>
+
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/problem.svg" alt="Magnifying Glass Icon" />
+            <span>The Problem</span>
+          </h3>
+          <p>
+            An increasing number of bus routes have been recently added and many
+            of those routes stop at the same bus stop. Commuters want to know
+            what the next arriving bus is and how long it’d take them to get to
+            the bus stop since simply rushing to the stop when they see a bus no
+            longer works since it may not even be the bus that they are expecting.
+          </p>
+          <p>
+            Most complaints received is for the bus stop at Washington and State
+            which currently have 7 bus lines serving the stop.
+          </p>
+
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/solution.svg" alt="Lightbulb Icon" />
+            <span>The Solution</span>
+          </h3>
+          <p>
+            To design a mobile app that displays important information for the
+            Washington & State bus stop which includes the following:
+          </p>
+          <ul>
+            <li>
+              Which bus routes service the stop
+            </li>
+            <li>
+              How many minutes until the bus arrives
+            </li>
+            <li>
+              How frequent each bus is
+            </li>
+        </section>
+        <hr />
+        <section class="research slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part II: Research & Discovery</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/usersurvey.svg" alt="Survey Icon" />
+            <span>User Survey</span>
+          </h3>
+          <p>
+            A user survey was conducted to understand the needs of commuters as
+            well as discover their motivations and frustrations with current apps
+            they were using. The following questions were answered from the survey
+            that was held:
+          </p>
+          <ul>
+           <li>How many times did survey participants take the bus? </li>
+           <li>What devices do they use when looking up bus information?</li>
+           <li>What was their go-to app when planning their commute?</li>
+           <li>Which features do they like or dislike about their current app?</li>
+           <li>What kind of information/feature did they wish their current app offered?</li>
+          </ul>
+        <p>
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/32OywCG"
+                  target="_blank"
+                  >VIEW USER SURVEY</a
+                >
+              </span>
+            </div>
+          </div>
+
+        <table>
+          <tr>
+            <th><strong>66.7%</strong></th>
+            <th><strong>87.5%</strong></th>
+            <th><strong>37.5%</strong></th>
+          </tr>
+          <tr>
+            <th>use their smartphone (app & web) to look up bus information</th>
+            <th>use Google Maps and is followed by 29.2% who use local transit apps</th>
+            <th>use an app to every time while another 37.5% plan sometimes.</th>
+          </tr>
+        </table>
+
+          <p>
+            <strong>Top 5 most important features:</strong>
+          </p>
+          <ul>
+            <li>Access to timetable maps & schedules</li>
+            <li>Ability to track the location of buses in real time</li>
+            <li>Ability to view list of stops near you</li>
+            <li>Real time updates on traffic & other issues</li>
+            <li>Directions to the nearest bus stops</li>
+          </ul>
+
+          <p>
+            <strong>Frustrations with current apps & commuting:</strong>
+          </p>
+          <ul>
+            <li>Shows inaccurate time estimates for when buses would arrive</li>
+            <li>Inaccurate bus schedules are shown</li>
+            <li>Bus delays are incredibly frustrating when commuting</li>
+            <li>Buses are always crowded</li>
+            <li>Routes are very confusing</li>
+          </ul>
+
+          <p>
+            After conducting the user survey, I was able to confirm that a lot
+            of my assumptions were correct but I hadn’t realized that directions
+            to the nearest bus stops and the ability to track the location of
+            buses in real time was considered as an important feature for bus
+            riders. The results and feedback received in the survey gave me more
+            insight to confidently move forward with bringing BusyBus to life.
+          </p>
+
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/competitive.svg" alt="Strategy Icon" />
+            <span>Competitive Analysis</span>
+          </h3>
+          <p>
+            My biggest takeaway from conducting the user survey was seeing that
+            bus riders weren’t absolutely happy with their current public transit
+            app since all their travel needs weren’t being met. I looked into
+            major players of the public transit market to find out how BusyBus
+            could enter the market.
+          </p>
+
+          <p>
+            It was important to look into what current competitors in the healthy
+            food delivery realm were doing in order to build a product that would
+            be different from what is currently offered.
+          </p>
+          <br />
+          <div id="storage">
+            <img src="./images/busybus/googlemaps.png" alt="Google Maps Logo" />
+          </div>
+          <br />
+          <p>
+            Google Maps was the leading app that my user participants used for
+            planning their trips and it made complete sense. They offered public
+            transit data that offered directions both in and out of metropolitan
+            areas and gave users the ability to download maps for offline use.
+            However, they lacked in providing real time public transit
+            information and walking navigation directions can sometimes be
+            inaccurate.
+          </p>
+
+          <div id="storage">
+            <img src="./images/busybus/moovit.png" alt="Moovit Logo" />
+          </div>
+          <br />
+          <p>
+            Moovit on the other hand positions themselves as “the Wikipedia of
+            Transit.” It’s a community-driven app hence, giving its users
+            access to real time transit data. However, Moovit’s limited for
+            those who need driving directions or public transit information
+            in suburbs where transit options are limited. Also, the app doesn’t
+            allow their users to manually update their route while in progress.
+          </p>
+
+          <p>
+            For BusyBus to successfully gain traction as a new competitor in the
+            market, it’s advisable to include features and strengths of major
+            players that’s beneficial to the user but also incorporate what
+            riders are looking for: real time updates and alerts.
+          </p>
+
+          <p>
+            In addition to this, truly understanding how an individual user plans
+            their trips and which routes they frequent will make the app a
+            regular go-to rather than something they use when they remember
+            or need it. Keeping tabs on bus stops the user frequently goes
+            to will help with offering better solutions for the user.
+          </p>
+
+          <p>
+            Last but not the least, providing accurate transit data will benefit
+            users. By removing limitations and barriers that other apps have
+            will help attract and add to BusyBus’ customer base.
+          </p>
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/345d4JS"
+                  target="_blank"
+                  >VIEW COMPETITIVE ANALYSIS</a
+                >
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="infoarch slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">
+              Part III: Information Architecture
+            </h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/userstories.svg" alt="User Flow Icon" />
+            <span>User Stories</span>
+          </h3>
+          <p>
+            Creating user stories was now an easier feat since I got to know who
+            my market competitors and potential users were. This step was done
+            so that I could idenitfy and demonstrate priority features for the
+            app as well as avoid scope creep.
+          </p>
+
+          <img
+            galleryItem
+            src="./images/busybus/userstories.png"
+            alt="User Stories"
+          />
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/2Podp6r"
+                  target="_blank"
+                  >VIEW USER STORIES</a
+                >
+              </span>
+            </div>
+          </div>
+
+          <h3 class="h3-icon">
+            <img src="./images/busybus/clickableprototypeicon.svg" alt="Prototype Icon" />
+            <span>Prototype</span>
+          </h3>
+          <p>
+            With my user stories selected and prioritized, I turned to pen and
+            paper to quickly sketch a 3-screen paper prototype so that I could
+            map out which features I wanted in each screen and how the layout
+            should look.
+          </p>
+          <br />
+          <img src="./images/busybus/paperprototype.jpg" alt="Paper Prototype" />
+          <p>
+            After creating my sketches, I created a clickable prototype using
+            Marvel so that I could test my design decisions and receive
+            feedback from test participants.
+          </p>
+
+          <h3 class="h3-icon">
+            <img src="./images/busybus/usabilityicon.svg" alt="Usability Test Icon" />
+            <span>Usability Testing</span>
+          </h3>
+          <p>
+            Test participants were able to provide me with incredibly helpful
+            feedback. Upon first glance, participants found the app easy to figure
+            out and were able to assume that it was a map app for buses and that
+            it could help with getting travel directions. It was also mentioned
+            that the interface was simple and straightforward.
+          </p>
+          <img src="./images/busybus/testingsession.jpg" alt="Testing Session Photo" />
+          <p>
+            Despite ease of use and being intuitive, test participants had also
+            pointed out design flaws that needed to be addressed:
+          </p>
+
+          <p>
+          <strong>1. Heart Icon and other nav bar icons:</strong> Testers were confused with the
+          heart icon which was placed so that users could “like” a route. In
+          addition to this, they felt that all icons should be labeled since
+          it would help users gain familiarity of where each feature is located.
+          </p>
+
+          <p>
+            <strong>2. Exit Button:</strong>
+            All testers had commented that the position of the exit button in
+            the last screen threw them off since it was inconsistent from the
+            first two screens they saw. In addition to placement, they also
+            suggested making it bigger so that it was more visible.
+          </p>
+
+          <p>
+            <strong>3. Colors on the sketches:</strong>
+            Testers were confused with what the colors in the sketches meant. I
+            later on realized that I shouldn’t have used any color on my paper
+            prototype so that they wouldn’t feel distracted or lose focus on
+            the goal for testing.
+          </p>
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/31Pf9YL"
+                  target="_blank"
+                  >VIEW CLICKABLE PROTOTYPE</a
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/2pmVLFx"
+                  target="_blank"
+                  >VIEW USABILITY TEST SCRIPT</a
+                >
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="visualdesign slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part IV: Visual Design</h1>
+          </div>
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/hifimockup.svg" alt="Window Layout Icon" />
+            <span>High-fidelity Mockups</span>
+          </h3>
+          <p>
+            Keeping in mind all the feedback I received on my sketches, I
+            proceeded to creating a high fidelity mockup for the bus stop
+            screen.
+          </p>
+
+          <div class="block-images">
+            <div>
+              <img src="./images/busybus/busstop1.png" alt="1st iteration" />
+            </div>
+            <div>
+              <img src="./images/busybus/busstop2.png" alt="2nd iteration" />
+            </div>
+            <div>
+              <img src="./images/busybus/busstop3.png" alt="Final version" />
+            </div>
+          </div>
+
+          <p>
+            1st Iteration 2nd Iteration Final Version
+          </p>
+
+          <h3>1st Iteration</h3>
+          <p>
+            My initial design was... let’s just say it was an “okay” try. I had
+            completely ignored Apple Guidelines and made a bunch of rookie mistakes.
+            I was still in the “as long as it looks cute” designer phase rather
+            than focused on usability.  Design flaws that needed to be corrected
+            in this version were:
+          </p>
+          <ul>
+            <li>
+              I needed to add a title bar to the screen which indicated the
+              location of the bus rider
+            </li>
+            <li>
+              Search field needed to be moved up top per Apple Guidelines and
+              user familiarity
+            </li>
+            <li>
+              Contrast between nav bar icons and background didn’t meet
+              accessibility guidelines.
+            </li>
+            <li>
+              An arrow needed to be added to the end of bus line information to
+              indicate that there’s more information available if tapped on.
+            </li>
+          </ul>
+
+          <h3>2nd Iteration</h3>
+          <p>
+            The second version was better since I added the title bar and
+            search field on the top part of the screen and an arrow after
+            bus information to avoid any user confusion. In addition to this,
+            the contrast issue in the nav bar was addressed by using a darker
+            shade as a background. I also introduced a new color to the active
+            icon to show the user that they were on that current page within
+            BusyBus. However, I still had a few more issues that I needed to
+            address.
+          </p>
+          <p>
+            Design flaws that needed to be corrected in this version were:
+          </p>
+          <ul>
+            <li>
+              Font size used was incredibly small and didn’t meet accessibility
+              guidelines
+            </li>
+            <li>
+              Icons in the map were too small and not readable. Again, another
+              accessibility issue
+            </li>
+          </ul>
+
+          <h3>Final Version</h3>
+          <p>
+            My final version had addressed all accessibility issues in terms of
+            readability and color. This version was a solution to the current
+            problem of riders because of the following reasons:
+          </p>
+
+          <ul>
+            <li>
+              Users are able to easily view the location of the next arriving bus
+              that’s within their vicinity on their screen. Bus locations are also
+              properly labeled with their line number so users are never confused
+              as to which direction their bus is coming from
+            </li>
+            <li>
+              Hierarchy is applied to easily see which bus line arrives in a set
+              amount of time. Green reflects that a bus is arriving in under 5
+              minutes, Yellow are for those arriving in less than 10 minutes and
+              buses arriving in more than 10 minutes are in red.
+            </li>
+            <li>
+              Users have access to seeing all lines arriving at the bus stop of
+              their choice after selecting the bus stop nearest to them (or of
+              their choice). Directions would also appear along with how long it
+              would take for the user to walk to the bus stop.
+            </li>
+          </ul>
+
+          <p>
+            For added ease of navigation and use, a navigation bar below also
+            allows the user to access the map view (bus stop display screen),
+            save trips they frequently take, view previous trips, plan future
+            trips and explore what’s around their current location.
+          </p>
+
+          <div class="center-link-wrap">
+            <div class="center-link">
+              <span>
+                <a
+                  href="http://bit.ly/31T6ftx"
+                  target="_blank"
+                  >VIEW MOCKUP IN FIGMA</a
+                >
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="wrapup slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part V: Frontend</h1>
+          </div>
+
+          <h3 class="h3-icon">
+            <img src="./images/busybus/frontendskills.svg" alt="Frontend Icon" />
+            <span>Building a Responsive Solution</span>
+          </h3>
+
+          <p>
+            Once I was 100% happy with my visual design, I utilized my HTML and
+            CSS skills to build the bus routes screen for BusyBus and deployed
+            the project to Github.
+          </p>
+
+          <video width="400" height="177" controls>
+            <source src="./images/busybus/busybusdemo.mov" type="video/mp4">
+          </video>
+
+
+          <div class="view-all-case-studies">
+            <span class="plain-invertible">
+              <a target="_blank" href="http://bit.ly/2JpIgvG"
+                >VIEW GITHUB PROTOTYPE</a
+              >
+            </span>
+          </div>
+
+          </section>
+
+          <hr />
+
+          <section class="wrapup slim">
+            <div class="rounded-b-div">
+              <h1 class="rounded-background">Part VI: Wrapping It All Up!</h1>
+            </div>
+
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/whatilearned.svg" alt="Teacher Icon" />
+            <span>What I Learned</span>
+          </h3>
+          <p>
+            This was my first UX project and although it was small and had one
+            specific use, I learned that no project is too small to truly
+            understand the needs of potential users and go through the entire
+            UX process.
+          <p>
+
+          <p>
+            Accessibility was also my biggest lesson here. After creating
+            different versions, I learned that sizing and color is incredibly
+            important to creating a design that feels inclusive for all types
+            of users.
+          </p>
+
+          <p>
+            I built a relationship with Apple Guidelines and learned that
+            referring to it wouldn’t just help improve my design but also
+            make coding the solution 10 times easier. As a new designer, it’s
+            tempting to stray from the norm. However, I realized that Apple
+            Guidelines (or any other guidelines) exist for a reason. It makes
+            my designs familiar to users and consistency is key to creating
+            something that doesn’t make my users have to think.
+          </p>
+
+          <h3 class="h3-icon">
+            <img src="./images/meshi/sectiontitle/moretime.svg" alt="Clock Icon" />
+            <span>If I Had More Time...</span>
+          </h3>
+          <p>
+            If I had more time, I’d conduct usability testing of the final
+            prototype and tweak accordingly. I’d also develop an Android design
+            and prototype to widen BusyBus’ user base.
+          </p>
+
+          <p>
+            I would’ve also loved to create a brand guideline for BusyBus and
+            more pages to make the prototype more engaging and realistic.
+          </p>
+        </section>
+
+        <hr />
+
+        <a href="/index.html"><img src="./images/lineart-la.svg"></a><br />
+        <span class="hover-link"
+          ><a
+            href="/index.html"
+            target="_blank"
+            >Go back home</a></span>
+
+        <a href="/meshi.html"><img src="./images/meshi/meshi1.png"></a><br />
+        <span class="hover-link"
+          ><a
+            href="/meshi.html"
+            target="_blank"
+            >View Meshi Case Study</a></span>
+
+        <hr class="contact hr" />
+        <section class="contact project">
+          <h1>Let's talk!</h1>
+          <p>
+            Let's chat about how we can create stellar user experiences, or
+            anything and everything about UX over a cup of coffee. ☕
+          </p>
+          <div class="lets-talk-buttons">
+            <ul class="flex-list">
+              <li class="plain-invertible">
+                <a href="./contact.html">CONTACT</a>
+              </li>
+              <li class="plain-invertible">
+                <a
+                  href="https://bit.ly/2mVJ4Ai"
+                  target="_blank"
+                  >DOWNLOAD RESUME</a
+                >
+              </li>
+            </ul>
+            <span class="return-to-top">
+              <a href=""
+                ><img src="./images/meshi/homepage/return-top.svg" alt="Return to top"
+              /></a>
+
+              <a href="#top">Return to top</a>
+            </span>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <section class="footer">
+          <div class="icons">
+            <a href="https://github.com/sara-p8"
+              ><img src="./images/Github.svg" alt="Github Icon"
+            /></a>
+            <a href="mailto:sarapapa308@gmail.com"
+              ><img src="./images/Gmail.svg" alt="Gmail Icon"
+            /></a>
+            <a href="https://linkedin.com/in/p-sara"
+              ><img src="./images/Linkedin.svg" alt="Linkedin Icon"
+            /></a>
+            <a href="https://twitter.com/ux_sara"
+              ><img src="./images/Twitter.svg" alt="Twitter Icon"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>© Sara Papa 2019</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
