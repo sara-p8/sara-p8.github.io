@@ -316,7 +316,6 @@ window.onresize = function() {
   toggleLightbox();
 
   document.querySelector("#light-box a.close").addEventListener("click", () => {
-    // document.querySelector("#light-box").style.display = "none";
     toggleLightbox();
   });
 
@@ -330,3 +329,15 @@ window.onresize = function() {
     });
   });
 })();
+
+/** Carousel */
+(function() {
+  const imageSet = document
+    .querySelector(".carousel > .images")
+    .getAttribute("set")
+    .split(",");
+  document
+    .querySelector(".carousel > .images > img")
+    .setAttribute("src", imageSet[0]);
+  console.log(imageSet.split(","));
+});

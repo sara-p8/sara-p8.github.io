@@ -34,7 +34,7 @@
         window.removeEventListener("load", loadResponsiveImages);
       }
 
-      window.addEventListener("load", loadResponsiveImages);
+      // window.addEventListener("load", loadResponsiveImages);
     </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
     <meta
@@ -79,7 +79,7 @@
                 Home</a
               >
             </li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#main">Work</a></li>
             <li><a href="./about.html">About</a></li>
             <li id="nav-li-contact" class="border">
               <a href="./contact.html">Contact</a>
@@ -115,12 +115,16 @@
     </header>
 
     <div id="main">
-      <h1>Case Studies</h1><br />
+      <h1>Case Studies</h1>
+      <br />
       <div>
         <div class="case-studies">
           <section class="work">
             <a href="./meshi.html"
-              ><img style="background: white" src="./images/meshicoversmall.png" alt="Meshi Case Study"
+              ><img
+                style="background: white"
+                src="./images/meshicoversmall.png"
+                alt="Meshi Case Study"
             /></a>
             <h3>MESHI</h3>
             <ul class="flex-list">
@@ -163,7 +167,8 @@
             </span>
           </section>
           <section class="work">
-            <a href=""><img
+            <a href=""
+              ><img
                 style="background: white"
                 src="./images/busybuscoversmall.png"
                 alt="Busybus Case Study"
@@ -302,10 +307,11 @@
     <script src="./scripts/main.js"></script>
     <script>
       /** Automatically close work link when pressed as it does not direct to a new page */
-      (function() {})();
-      document
-        .querySelector('a[href="#work"]')
-        .addEventListener("click", toggleMenu);
+      (function() {
+        document
+          .querySelector('a[href="#main"]')
+          .addEventListener("click", toggleMenu);
+      })();
     </script>
   </body>
 </html>
