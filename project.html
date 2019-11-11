@@ -32,7 +32,7 @@
         window.removeEventListener("load", loadResponsiveImages);
       }
 
-      window.addEventListener("load", loadResponsiveImages);
+      // window.addEventListener("load", loadResponsiveImages);
     </script>
     <title>Honeycomb Cloud Storage - Sara Papa</title>
     <!-- Reset -->
@@ -72,7 +72,7 @@
           <ul style="z-index:1;">
             <li><a href="./index.html">Home</a></li>
             <li class="active">
-              <a href="./index.html#work">Work</a>
+              <a href="./index.html#main">Work</a>
             </li>
             <li><a href="./about.html">About</a></li>
             <li id="nav-li-contact" class="border">
@@ -106,6 +106,7 @@
               alt="Honeycomb Background Logo"
             />
             <img
+              style='width: 50%'
               id="honey-comb-first-look"
               src="./images/honeycombshowcase.png"
               alt="Honeycomb First Look"
@@ -120,8 +121,10 @@
         <div class="project-background"></div>
         <section class="roles">
           <div class="role">
-            <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
-            <h3>Design Role</h3>
+            <div class="inline">
+              <img src="./images/brain-01.svg" alt="Brain Icon" /><br />
+              <h3>Design Role</h3>
+            </div>
             <p>UX Design</p>
             <p>Visual Design</p>
 
@@ -136,8 +139,10 @@
             <p></p>
           </div>
           <div class="role">
-            <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
-            <h3>Design Deliverables</h3>
+            <div class="inline">
+              <img src="./images/browser-01.svg" alt="Browser Icon" /><br />
+              <h3>Design Deliverables</h3>
+            </div>
             <p>User Survey</p>
 
             <p>Competitive Analysis</p>
@@ -158,11 +163,10 @@
             <p>Final Hi-Fi Prototype</p>
           </div>
           <div class="role">
-            <img
-              src="./images/browser-windos-01.svg"
-              alt="Monitor Icon"
-            /><br />
-            <h3>Duration & Tools</h3>
+            <div class="inline">
+              <img src="./images/browser-windos-01.svg" alt="Monitor Icon" />
+              <h3>Duration & Tools</h3>
+            </div>
             <p>5 Weeks</p>
 
             <div class="hr-div"></div>
@@ -514,7 +518,11 @@
           <table id="persona-table" class="mobile">
             <tr>
               <td>
-                <img galleryItem src="./images/Isabel.png" alt="Isabel Persona Photo" />
+                <img
+                  galleryItem
+                  src="./images/Isabel.png"
+                  alt="Isabel Persona Photo"
+                />
               </td>
             </tr>
             <tr>
@@ -566,7 +574,11 @@
           <table id="persona-table" class="mobile">
             <tr>
               <td>
-                <img galleryItem src="./images/Jeremy.png" alt="Jeremy Persona Photo" />
+                <img
+                  galleryItem
+                  src="./images/Jeremy.png"
+                  alt="Jeremy Persona Photo"
+                />
               </td>
             </tr>
             <tr>
@@ -617,6 +629,7 @@
               </td>
             </tr>
           </table>
+
           <br />
           <div class="center-link-wrap">
             <div class="center-link">
@@ -1134,16 +1147,19 @@
             files so that users would better understand how this could work as a
             resource for them as individuals and as a team.
           </p>
-        <hr />
+          <hr />
           <section class="linking">
             <div class="linking-images">
               <div>
-                <a href="/index.html"><img src="./images/lineart-la.svg" alt="Back Home Image" /></a>
+                <a href="/index.html"
+                  ><img src="./images/lineart-la.svg" alt="Back Home Image"
+                /></a>
               </div>
               <div>
-                <a href="/meshi.html"><img
-                  style="background: white; object-fit: contain;"
-                  src="./images/meshi/meshi1.png"
+                <a href="/meshi.html"
+                  ><img
+                    style="background: white; object-fit: contain;"
+                    src="./images/meshi/meshi1.png"
                 /></a>
               </div>
             </div>
@@ -1161,12 +1177,16 @@
           <section class="mobile-linking">
             <div class="linking-text">
               <div class="previous center-link">
-                  <a href="/index.html"><img src="./images/meshi/mobile/linkarrowleft.svg" alt="" /></a>
+                <a href="/index.html"
+                  ><img src="./images/meshi/mobile/linkarrowleft.svg" alt=""
+                /></a>
                 <a href="/index.html">Home</a>
               </div>
               <div class="next center-link">
-                  <a href="/project.html">Meshi</a>
-                <a href="/meshi.html"><img src="./images/meshi/mobile/linkarrowright.svg" alt="" /></a>
+                <a href="/project.html">Meshi</a>
+                <a href="/meshi.html"
+                  ><img src="./images/meshi/mobile/linkarrowright.svg" alt=""
+                /></a>
               </div>
             </div>
           </section>
@@ -1184,16 +1204,16 @@
                 <a href="./contact.html">CONTACT</a>
               </li>
               <li class="plain-invertible">
-                <a
-                  href="http://bit.ly/2CmbMhS"
-                  target="_blank"
+                <a href="http://bit.ly/2CmbMhS" target="_blank"
                   >DOWNLOAD RESUME</a
                 >
               </li>
             </ul>
             <span class="return-to-top">
               <a href=""
-                ><img src="./images/meshi/homepage/return-top.svg" alt="Return to top"
+                ><img
+                  src="./images/meshi/homepage/return-top.svg"
+                  alt="Return to top"
               /></a>
 
               <a href="#top">Return to top</a>
