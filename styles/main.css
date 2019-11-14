@@ -371,6 +371,7 @@ table {
 
   .final-product,
   .user-metrics,
+  .user-survey,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
@@ -406,6 +407,7 @@ table {
 
   .final-product,
   .user-metrics,
+  .user-survey,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
@@ -454,7 +456,15 @@ table {
     /* margin: unset !important; */
   }
 
-  video {
+  .busy-bus-video {
+    display: block;
+    height: 515px;
+    width: 365px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .meshi-video {
     display: block;
     width: 160px;
     height: 315px;
@@ -843,6 +853,20 @@ table {
     width: 100%;
     padding-bottom: 16px;
   }
+
+  .user-survey {
+    margin-top: -32px;
+    padding: 32px 0;
+  }
+
+  .user-survey .row {
+    flex-wrap: wrap;
+  }
+  .user-survey .col {
+    width: unset !important;
+    margin: 32px 32px 0 32px;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -867,7 +891,7 @@ table {
     line-height: 70px;
   }
 
-  video {
+  .meshi-video {
     width: 320px;
     height: 630px;
   }
@@ -905,6 +929,7 @@ table {
 
   .final-product,
   .user-metrics,
+  .user-survey,
   .slim .rounded-b-div,
   .slim .h3-icon,
   .slim ul,
@@ -1294,6 +1319,17 @@ table {
     display: flex;
     justify-content: center;
   }
+
+  .user-survey .col {
+    width: 30%;
+  }
+
+  .busy-bus-video {
+    display: block;
+    height: 646px;
+    width: 433px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1548,6 +1584,10 @@ td.center {
 .block-images {
   display: flex;
   justify-content: center;
+}
+
+.block-images > div {
+  margin: 0 8px;
 }
 
 .block-images img {
@@ -1917,4 +1957,25 @@ section .mobile-linking a {
   text-align: center;
   font-weight: 600;
   font-size: 13px;
+}
+
+.user-survey > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-survey .col {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3d8d4;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.user-survey .col > span:first-child {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 8px 0;
 }

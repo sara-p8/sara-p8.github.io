@@ -32,7 +32,7 @@
         window.removeEventListener("load", loadResponsiveImages);
       }
 
-      window.addEventListener("load", loadResponsiveImages);
+      // window.addEventListener("load", loadResponsiveImages);
     </script>
     <title>BusyBus App - Sara Papa</title>
     <!-- Reset -->
@@ -72,7 +72,7 @@
           <ul style="z-index:1;">
             <li><a href="./index.html">Home</a></li>
             <li class="active">
-              <a href="./index.html#work">Work</a>
+              <a href="./index.html#main">Work</a>
             </li>
             <li><a href="./about.html">About</a></li>
             <li id="nav-li-contact" class="border">
@@ -98,8 +98,13 @@
           <div id="layered-images">
             <img
               id="honey-comb-first-look"
-              src="./images/busybus/busybushero.png"
-              alt="Honeycomb First Look"
+              src="./images/busybus/busybushero-bg.png"
+              alt="Busybus Background"
+            />
+            <img
+              id="honey-comb-first-look"
+              src="./images/busybus/busybushero-mockups.png"
+              alt="Busybus Mockup"
             />
           </div>
         </section>
@@ -111,8 +116,11 @@
         <div class="project-background"></div>
         <section class="roles">
           <div class="role">
-            <img src="./images/meshi/sectiontitle/designrole.svg" alt="Role Icon" /><br />
-            <h3>Design Role</h3>
+            <div class="inline">
+                <img src="./images/meshi/sectiontitle/designrole.svg" alt="Role Icon" /><br />
+                <h3>Design Role</h3>
+
+            </div>
 
             <p>UX Design</p>
             <p>Visual Design</p>
@@ -124,8 +132,11 @@
             <p></p>
           </div>
           <div class="role">
-            <img src="./images/meshi/sectiontitle/designdeliverables.svg" alt="Browser Icon" /><br />
-            <h3>Design Deliverables</h3>
+            <div class="inline">
+                <img src="./images/meshi/sectiontitle/designdeliverables.svg" alt="Browser Icon" /><br />
+                <h3>Design Deliverables</h3>
+            </div>
+
             <p>User Research</p>
             <p>Competitive Analysis</p>
             <p>User Stories</p>
@@ -136,11 +147,14 @@
             <p>Basic Frontend Development</p>
           </div>
           <div class="role">
-            <img
-              src="./images/meshi/sectiontitle/durationtools.svg"
-              alt="Monitor Icon"
-            /><br />
-            <h3>Duration & Tools</h3>
+            <div class="inline">
+                <img
+                src="./images/meshi/sectiontitle/durationtools.svg"
+                alt="Monitor Icon"
+              /><br />
+              <h3>Duration & Tools</h3>
+            </div>
+
             <p>3 Weeks</p>
 
             <div class="hr-div"></div>
@@ -248,19 +262,32 @@
               </span>
             </div>
           </div>
+          <br />
+          <div class="user-survey">
+              <div class="row">
+                <div class="col">
+                  <span>66.7%</span>
+                  <span>
+                    use their smartphone (app & web) to look up bus information
+                  </span>
+                </div>
+                <div class="col">
+                  <span>87.5%</span>
+                  <span>
+                    use Google Maps and is followed by 29.2% who use local transit
+                    apps
+                  </span>
+                </div>
+                <div class="col">
+                  <span>37.5%</span>
+                  <span>
+                    use an app to every time while another 37.5% plan sometimes.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <br />
 
-        <table>
-          <tr>
-            <th><strong>66.7%</strong></th>
-            <th><strong>87.5%</strong></th>
-            <th><strong>37.5%</strong></th>
-          </tr>
-          <tr>
-            <th>use their smartphone (app & web) to look up bus information</th>
-            <th>use Google Maps and is followed by 29.2% who use local transit apps</th>
-            <th>use an app to every time while another 37.5% plan sometimes.</th>
-          </tr>
-        </table>
 
           <p>
             <strong>Top 5 most important features:</strong>
@@ -312,7 +339,7 @@
           </p>
           <br />
           <div id="storage">
-            <img src="./images/busybus/googlemaps.png" alt="Google Maps Logo" />
+            <img style='width: auto; height: 144px;' src="./images/busybus/googlemaps.png" alt="Google Maps Logo" />
           </div>
           <br />
           <p>
@@ -326,7 +353,7 @@
           </p>
 
           <div id="storage">
-            <img src="./images/busybus/moovit.png" alt="Moovit Logo" />
+            <img style='width: auto; height: 144px;' src="./images/busybus/moovit.png" alt="Moovit Logo" />
           </div>
           <br />
           <p>
@@ -358,7 +385,7 @@
             users. By removing limitations and barriers that other apps have
             will help attract and add to BusyBus’ customer base.
           </p>
-
+          <br />
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
@@ -396,7 +423,7 @@
             src="./images/busybus/userstories.png"
             alt="User Stories"
           />
-
+          <br />
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
@@ -510,26 +537,26 @@
 
           <div class="block-images">
             <div>
-              <img src="./images/busybus/busstop1.png" alt="1st iteration" />
+              <img desktop src="./images/busybus/busstop1.png" alt="1st iteration" />
+              <span class='caption'>1st Iteration</span>
             </div>
             <div>
-              <img src="./images/busybus/busstop2.png" alt="2nd iteration" />
+              <img desktop src="./images/busybus/busstop2.png" alt="2nd iteration" />
+              <span class='caption'>2nd Iteration</span>
             </div>
             <div>
-              <img src="./images/busybus/busstop3.png" alt="Final version" />
+              <img desktop src="./images/busybus/busstop3.png" alt="Final version" />
+              <span class='caption'>Final Version</span>
             </div>
           </div>
 
-          <p>
-            1st Iteration 2nd Iteration Final Version
-          </p>
-
-          <h3>1st Iteration</h3>
+          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop1.png" alt="1st iteration">
+          <h3 class='h3-icon'>1st Iteration</h3>
           <p>
             My initial design was... let’s just say it was an “okay” try. I had
             completely ignored Apple Guidelines and made a bunch of rookie mistakes.
             I was still in the “as long as it looks cute” designer phase rather
-            than focused on usability.  Design flaws that needed to be corrected
+            than focused on usability.   Design flaws that needed to be corrected
             in this version were:
           </p>
           <ul>
@@ -551,7 +578,8 @@
             </li>
           </ul>
 
-          <h3>2nd Iteration</h3>
+          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop2.png" alt="2nd iteration">
+          <h3 class='h3-icon'>2nd Iteration</h3>
           <p>
             The second version was better since I added the title bar and
             search field on the top part of the screen and an arrow after
@@ -576,7 +604,8 @@
             </li>
           </ul>
 
-          <h3>Final Version</h3>
+          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop1.png" alt="Final version">
+          <h3 class='h3-icon'>Final Version</h3>
           <p>
             My final version had addressed all accessibility issues in terms of
             readability and color. This version was a solution to the current
@@ -610,7 +639,7 @@
             save trips they frequently take, view previous trips, plan future
             trips and explore what’s around their current location.
           </p>
-
+          <br />
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
@@ -642,7 +671,7 @@
             the project to Github.
           </p>
 
-          <video width="400" height="177" controls>
+          <video class='busy-bus-video' controls>
             <source src="./images/busybus/busybusdemo.mov" type="video/mp4">
           </video>
 
@@ -710,19 +739,41 @@
 
         <hr />
 
-        <a href="/index.html"><img src="./images/lineart-la.svg"></a><br />
-        <span class="hover-link"
-          ><a
-            href="/index.html"
-            target="_blank"
-            >Go back home</a></span>
+        <section class="linking">
+          <div class="linking-images">
+            <div>
+              <a href="/index.html"><img src="./images/lineart-la.svg" alt="Back Home Image" /></a>
+            </div>
+            <div>
+              <a href="/meshi.html"><img
+                style="background: white; object-fit: contain;"
+                src="./images/meshi/meshi1.png"
+              /></a>
+            </div>
+          </div>
+          <div class="linking-links">
+            <div class="center-link">
+              <a href="/index.html">Go Back Home</a>
+            </div>
+            <div class="center-link">
+              <a href="/meshi.html">View Meshi Case Study</a>
+            </div>
+          </div>
+        </section>
 
-        <a href="/meshi.html"><img src="./images/meshi/meshi1.png"></a><br />
-        <span class="hover-link"
-          ><a
-            href="/meshi.html"
-            target="_blank"
-            >View Meshi Case Study</a></span>
+        <section class="mobile-linking">
+          <div class="linking-text">
+            <div class="previous center-link">
+                <a href="/index.html"><img src="./images/meshi/mobile/linkarrowleft.svg" alt="" /></a>
+              <a href="/index.html">Home</a>
+            </div>
+            <div class="next center-link">
+                <a href="/meshi.html">Meshi</a>
+              <a href="/meshi.html"><img src="./images/meshi/mobile/linkarrowright.svg" alt="" /></a>
+            </div>
+          </div>
+        </section>
+      </section>
 
         <hr class="contact hr" />
         <section class="contact project">
@@ -738,7 +789,7 @@
               </li>
               <li class="plain-invertible">
                 <a
-                  href="https://bit.ly/2mVJ4Ai"
+                  href="http://bit.ly/2CmbMhS"
                   target="_blank"
                   >DOWNLOAD RESUME</a
                 >
