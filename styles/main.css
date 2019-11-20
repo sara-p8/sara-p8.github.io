@@ -178,16 +178,17 @@ td {
 }
 .work > ul > li {
   list-style-type: none;
-  color: #ffffff;
-  background-color: #ccb8bb;
-  border-radius: 10px;
+  color: #70474D;
+  font-weight: 400;
+  background-color: #FBF0EB;
+  border-radius: 5px;
   padding: 4px 12px;
   font-size: 14px;
   margin-bottom: 4px;
 }
 
 .work > ul > li:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 5px;
 }
 
 .flex-list {
@@ -888,7 +889,7 @@ table {
     align-items: center;
   }
   h1 {
-    line-height: 70px;
+    line-height: 30px;
   }
 
   .meshi-video {
@@ -1370,7 +1371,7 @@ table {
 .center-link a {
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(to top, #ae8d92 50%, #fff 50%);
+  background: linear-gradient(to top, #CCB8BB 50%, #fff 50%);
   background-size: 100% 200%;
   color: #333333;
   transition: all 0.1s ease-in-out;
@@ -1412,7 +1413,7 @@ table {
 .hover-link a {
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(to top, #ae8d92 50%, #fff 50%);
+  background: linear-gradient(to top, #CCB8BB 50%, #fff 50%);
   background-size: 100% 200%;
   color: #333333;
   transition: all 0.3s ease-in-out;
@@ -1420,7 +1421,7 @@ table {
 
 .hover-link:hover a {
   background-position: 0% 100%;
-  color: white;
+  color: #333333;
 }
 
 #cfm-group p {
