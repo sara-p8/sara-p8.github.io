@@ -16,24 +16,6 @@
       gtag("config", "G-3XKX7QHKHF");
     </script>
 
-    <!-- Optimized image loading -->
-    <script>
-      function loadResponsiveImages() {
-        if (window.innerWidth < 480) {
-          Array.from(document.images).forEach(img => {
-            const src = img.src;
-            if (src.match(/\.(jpg|png)$/)) {
-              img.src = src.replace(/images\/(.*)/, "images/mobile/$1");
-            }
-          });
-        }
-        const images = document.images;
-
-        // window.removeEventListener("load", loadResponsiveImages);
-      }
-
-      // window.addEventListener("load", loadResponsiveImages);
-    </script>
     <title>Meshi Delivery App - Sara Papa</title>
     <!-- Reset -->
     <meta
@@ -1499,7 +1481,7 @@
                 </p>
               </div>
               <div class="col">
-                <video controls>
+                <video class='meshi-video' controls>
                   <source
                     src="./images/meshi/onboardingvideo1.mp4"
                     type="video/mp4"
@@ -1517,7 +1499,7 @@
                 </p>
               </div>
               <div class="col">
-                <video controls>
+                <video class='meshi-video' controls>
                   <source
                     src="./images/meshi/personalizemealvideo2.mov"
                     type="video/mp4"
@@ -1535,7 +1517,7 @@
                 </p>
               </div>
               <div class="col">
-                <video controls>
+                <video class='meshi-video' controls>
                   <source
                     src="./images/meshi/mealplanvideo3.mov"
                     type="video/mp4"

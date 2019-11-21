@@ -178,9 +178,9 @@ td {
 }
 .work > ul > li {
   list-style-type: none;
-  color: #70474D;
+  color: #70474d;
   font-weight: 400;
-  background-color: #FBF0EB;
+  background-color: #fbf0eb;
   border-radius: 5px;
   padding: 4px 12px;
   font-size: 14px;
@@ -690,7 +690,7 @@ table {
   }
 
   .desktop {
-    display: none;
+    display: none !important;
   }
   header,
   #main {
@@ -1006,8 +1006,9 @@ table {
   #layered-images {
     margin: 0 -136px;
   }
+
   .mobile {
-    display: none;
+    display: none !important;
   }
 
   section.roles {
@@ -1020,14 +1021,14 @@ table {
   .wireframe-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 411px);
     justify-content: center;
   }
 
   .wireframe-gallery > img {
     object-fit: contain;
     display: block;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .wireframe-gallery.with-4 {
@@ -1371,7 +1372,7 @@ table {
 .center-link a {
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(to top, #CCB8BB 50%, #fff 50%);
+  background: linear-gradient(to top, #ccb8bb 50%, #fff 50%);
   background-size: 100% 200%;
   color: #333333;
   transition: all 0.1s ease-in-out;
@@ -1381,7 +1382,10 @@ table {
 .center-link-wrap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 15px;
+  margin: 0 auto;
 }
 .center-link {
   display: inline-block;
@@ -1413,7 +1417,7 @@ table {
 .hover-link a {
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(to top, #CCB8BB 50%, #fff 50%);
+  background: linear-gradient(to top, #ccb8bb 50%, #fff 50%);
   background-size: 100% 200%;
   color: #333333;
   transition: all 0.3s ease-in-out;
@@ -1645,6 +1649,9 @@ h1.rounded-background {
 .h3-icon {
   display: flex;
   align-items: center;
+}
+
+.h3-icon:not(:nth-child(2)) {
   margin-top: 70px;
 }
 
@@ -1887,6 +1894,7 @@ section .mobile-linking a {
 .mobile-linking .previous,
 .mobile-linking .next {
   display: flex;
+  align-items: center;
 }
 
 .user-metrics {

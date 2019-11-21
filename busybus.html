@@ -16,24 +16,6 @@
       gtag("config", "G-3XKX7QHKHF");
     </script>
 
-    <!-- Optimized image loading -->
-    <script>
-      function loadResponsiveImages() {
-        if (window.innerWidth < 480) {
-          Array.from(document.images).forEach(img => {
-            const src = img.src;
-            if (src.match(/\.(jpg|png)$/)) {
-              img.src = src.replace(/images\/(.*)/, "images/mobile/$1");
-            }
-          });
-        }
-        const images = document.images;
-
-        window.removeEventListener("load", loadResponsiveImages);
-      }
-
-      // window.addEventListener("load", loadResponsiveImages);
-    </script>
     <title>BusyBus App - Sara Papa</title>
     <!-- Reset -->
     <meta
@@ -84,7 +66,9 @@
       <div class="container">
         <section class="introduction">
           <div style="display: flex; justify-content: center;">
-            <h1>BusyBus</h1>
+            <h1 style="font-size: 80px; font-weight: 600; margin: 40px 0;">
+              BusyBus
+            </h1>
           </div>
 
           <div class="project-description">
@@ -117,9 +101,11 @@
         <section class="roles">
           <div class="role">
             <div class="inline">
-                <img src="./images/meshi/sectiontitle/designrole.svg" alt="Role Icon" /><br />
-                <h3>Design Role</h3>
-
+              <img
+                src="./images/meshi/sectiontitle/designrole.svg"
+                alt="Role Icon"
+              /><br />
+              <h3>Design Role</h3>
             </div>
 
             <p>UX Design</p>
@@ -133,8 +119,11 @@
           </div>
           <div class="role">
             <div class="inline">
-                <img src="./images/meshi/sectiontitle/designdeliverables.svg" alt="Browser Icon" /><br />
-                <h3>Design Deliverables</h3>
+              <img
+                src="./images/meshi/sectiontitle/designdeliverables.svg"
+                alt="Browser Icon"
+              /><br />
+              <h3>Design Deliverables</h3>
             </div>
 
             <p>User Research</p>
@@ -148,7 +137,7 @@
           </div>
           <div class="role">
             <div class="inline">
-                <img
+              <img
                 src="./images/meshi/sectiontitle/durationtools.svg"
                 alt="Monitor Icon"
               /><br />
@@ -181,7 +170,10 @@
             <h1 class="rounded-background">Part I: Overview</h1>
           </div>
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/whatismeshi.svg" alt="Notepad Icon" />
+            <img
+              src="./images/meshi/sectiontitle/whatismeshi.svg"
+              alt="Notepad Icon"
+            />
             <span>What is BusyBus?</span>
           </h3>
           <p>
@@ -193,7 +185,10 @@
           </p>
 
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/problem.svg" alt="Magnifying Glass Icon" />
+            <img
+              src="./images/meshi/sectiontitle/problem.svg"
+              alt="Magnifying Glass Icon"
+            />
             <span>The Problem</span>
           </h3>
           <p>
@@ -201,7 +196,8 @@
             of those routes stop at the same bus stop. Commuters want to know
             what the next arriving bus is and how long it’d take them to get to
             the bus stop since simply rushing to the stop when they see a bus no
-            longer works since it may not even be the bus that they are expecting.
+            longer works since it may not even be the bus that they are
+            expecting.
           </p>
           <p>
             Most complaints received is for the bus stop at Washington and State
@@ -209,7 +205,10 @@
           </p>
 
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/solution.svg" alt="Lightbulb Icon" />
+            <img
+              src="./images/meshi/sectiontitle/solution.svg"
+              alt="Lightbulb Icon"
+            />
             <span>The Solution</span>
           </h3>
           <p>
@@ -226,6 +225,7 @@
             <li>
               How frequent each bus is
             </li>
+          </ul>
         </section>
         <hr />
         <section class="research slim">
@@ -233,30 +233,36 @@
             <h1 class="rounded-background">Part II: Research & Discovery</h1>
           </div>
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/usersurvey.svg" alt="Survey Icon" />
+            <img
+              src="./images/meshi/sectiontitle/usersurvey.svg"
+              alt="Survey Icon"
+            />
             <span>User Survey</span>
           </h3>
           <p>
             A user survey was conducted to understand the needs of commuters as
-            well as discover their motivations and frustrations with current apps
-            they were using. The following questions were answered from the survey
-            that was held:
+            well as discover their motivations and frustrations with current
+            apps they were using. The following questions were answered from the
+            survey that was held:
           </p>
           <ul>
-           <li>How many times did survey participants take the bus? </li>
-           <li>What devices do they use when looking up bus information?</li>
-           <li>What was their go-to app when planning their commute?</li>
-           <li>Which features do they like or dislike about their current app?</li>
-           <li>What kind of information/feature did they wish their current app offered?</li>
+            <li>How many times did survey participants take the bus?</li>
+            <li>What devices do they use when looking up bus information?</li>
+            <li>What was their go-to app when planning their commute?</li>
+            <li>
+              Which features do they like or dislike about their current app?
+            </li>
+            <li>
+              What kind of information/feature did they wish their current app
+              offered?
+            </li>
           </ul>
-        <p>
+          <p></p>
 
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
-                <a
-                  href="http://bit.ly/32OywCG"
-                  target="_blank"
+                <a href="http://bit.ly/32OywCG" target="_blank"
                   >VIEW USER SURVEY</a
                 >
               </span>
@@ -264,30 +270,29 @@
           </div>
           <br />
           <div class="user-survey">
-              <div class="row">
-                <div class="col">
-                  <span>66.7%</span>
-                  <span>
-                    use their smartphone (app & web) to look up bus information
-                  </span>
-                </div>
-                <div class="col">
-                  <span>87.5%</span>
-                  <span>
-                    use Google Maps and is followed by 29.2% who use local transit
-                    apps
-                  </span>
-                </div>
-                <div class="col">
-                  <span>37.5%</span>
-                  <span>
-                    use an app to every time while another 37.5% plan sometimes.
-                  </span>
-                </div>
+            <div class="row">
+              <div class="col">
+                <span>66.7%</span>
+                <span>
+                  use their smartphone (app & web) to look up bus information
+                </span>
+              </div>
+              <div class="col">
+                <span>87.5%</span>
+                <span>
+                  use Google Maps and is followed by 29.2% who use local transit
+                  apps
+                </span>
+              </div>
+              <div class="col">
+                <span>37.5%</span>
+                <span>
+                  use an app to every time while another 37.5% plan sometimes.
+                </span>
               </div>
             </div>
-            <br />
-
+          </div>
+          <br />
 
           <p>
             <strong>Top 5 most important features:</strong>
@@ -321,25 +326,32 @@
           </p>
 
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/competitive.svg" alt="Strategy Icon" />
+            <img
+              src="./images/meshi/sectiontitle/competitive.svg"
+              alt="Strategy Icon"
+            />
             <span>Competitive Analysis</span>
           </h3>
           <p>
             My biggest takeaway from conducting the user survey was seeing that
-            bus riders weren’t absolutely happy with their current public transit
-            app since all their travel needs weren’t being met. I looked into
-            major players of the public transit market to find out how BusyBus
-            could enter the market.
+            bus riders weren’t absolutely happy with their current public
+            transit app since all their travel needs weren’t being met. I looked
+            into major players of the public transit market to find out how
+            BusyBus could enter the market.
           </p>
 
           <p>
-            It was important to look into what current competitors in the healthy
-            food delivery realm were doing in order to build a product that would
-            be different from what is currently offered.
+            It was important to look into what current competitors in the
+            healthy food delivery realm were doing in order to build a product
+            that would be different from what is currently offered.
           </p>
           <br />
           <div id="storage">
-            <img style='width: auto; height: 144px;' src="./images/busybus/googlemaps.png" alt="Google Maps Logo" />
+            <img
+              style="width: auto; height: 144px;"
+              src="./images/busybus/googlemaps.png"
+              alt="Google Maps Logo"
+            />
           </div>
           <br />
           <p>
@@ -353,16 +365,20 @@
           </p>
 
           <div id="storage">
-            <img style='width: auto; height: 144px;' src="./images/busybus/moovit.png" alt="Moovit Logo" />
+            <img
+              style="width: auto; height: 144px;"
+              src="./images/busybus/moovit.png"
+              alt="Moovit Logo"
+            />
           </div>
           <br />
           <p>
             Moovit on the other hand positions themselves as “the Wikipedia of
-            Transit.” It’s a community-driven app hence, giving its users
-            access to real time transit data. However, Moovit’s limited for
-            those who need driving directions or public transit information
-            in suburbs where transit options are limited. Also, the app doesn’t
-            allow their users to manually update their route while in progress.
+            Transit.” It’s a community-driven app hence, giving its users access
+            to real time transit data. However, Moovit’s limited for those who
+            need driving directions or public transit information in suburbs
+            where transit options are limited. Also, the app doesn’t allow their
+            users to manually update their route while in progress.
           </p>
 
           <p>
@@ -373,11 +389,11 @@
           </p>
 
           <p>
-            In addition to this, truly understanding how an individual user plans
-            their trips and which routes they frequent will make the app a
-            regular go-to rather than something they use when they remember
-            or need it. Keeping tabs on bus stops the user frequently goes
-            to will help with offering better solutions for the user.
+            In addition to this, truly understanding how an individual user
+            plans their trips and which routes they frequent will make the app a
+            regular go-to rather than something they use when they remember or
+            need it. Keeping tabs on bus stops the user frequently goes to will
+            help with offering better solutions for the user.
           </p>
 
           <p>
@@ -389,9 +405,7 @@
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
-                <a
-                  href="http://bit.ly/345d4JS"
-                  target="_blank"
+                <a href="http://bit.ly/345d4JS" target="_blank"
                   >VIEW COMPETITIVE ANALYSIS</a
                 >
               </span>
@@ -408,7 +422,10 @@
             </h1>
           </div>
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/userstories.svg" alt="User Flow Icon" />
+            <img
+              src="./images/meshi/sectiontitle/userstories.svg"
+              alt="User Flow Icon"
+            />
             <span>User Stories</span>
           </h3>
           <p>
@@ -427,9 +444,7 @@
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
-                <a
-                  href="http://bit.ly/2Podp6r"
-                  target="_blank"
+                <a href="http://bit.ly/2Podp6r" target="_blank"
                   >VIEW USER STORIES</a
                 >
               </span>
@@ -437,7 +452,10 @@
           </div>
 
           <h3 class="h3-icon">
-            <img src="./images/busybus/clickableprototypeicon.svg" alt="Prototype Icon" />
+            <img
+              src="./images/busybus/clickableprototypeicon.svg"
+              alt="Prototype Icon"
+            />
             <span>Prototype</span>
           </h3>
           <p>
@@ -447,35 +465,45 @@
             should look.
           </p>
           <br />
-          <img src="./images/busybus/paperprototype.jpg" alt="Paper Prototype" />
+          <img
+            src="./images/busybus/paperprototype.jpg"
+            alt="Paper Prototype"
+          />
           <p>
             After creating my sketches, I created a clickable prototype using
-            Marvel so that I could test my design decisions and receive
-            feedback from test participants.
+            Marvel so that I could test my design decisions and receive feedback
+            from test participants.
           </p>
 
           <h3 class="h3-icon">
-            <img src="./images/busybus/usabilityicon.svg" alt="Usability Test Icon" />
+            <img
+              src="./images/busybus/usabilityicon.svg"
+              alt="Usability Test Icon"
+            />
             <span>Usability Testing</span>
           </h3>
           <p>
             Test participants were able to provide me with incredibly helpful
-            feedback. Upon first glance, participants found the app easy to figure
-            out and were able to assume that it was a map app for buses and that
-            it could help with getting travel directions. It was also mentioned
-            that the interface was simple and straightforward.
+            feedback. Upon first glance, participants found the app easy to
+            figure out and were able to assume that it was a map app for buses
+            and that it could help with getting travel directions. It was also
+            mentioned that the interface was simple and straightforward.
           </p>
-          <img src="./images/busybus/testingsession.jpg" alt="Testing Session Photo" />
+          <img
+            src="./images/busybus/testingsession.jpg"
+            alt="Testing Session Photo"
+          />
           <p>
             Despite ease of use and being intuitive, test participants had also
             pointed out design flaws that needed to be addressed:
           </p>
 
           <p>
-          <strong>1. Heart Icon and other nav bar icons:</strong> Testers were confused with the
-          heart icon which was placed so that users could “like” a route. In
-          addition to this, they felt that all icons should be labeled since
-          it would help users gain familiarity of where each feature is located.
+            <strong>1. Heart Icon and other nav bar icons:</strong> Testers were
+            confused with the heart icon which was placed so that users could
+            “like” a route. In addition to this, they felt that all icons should
+            be labeled since it would help users gain familiarity of where each
+            feature is located.
           </p>
 
           <p>
@@ -490,28 +518,21 @@
             <strong>3. Colors on the sketches:</strong>
             Testers were confused with what the colors in the sketches meant. I
             later on realized that I shouldn’t have used any color on my paper
-            prototype so that they wouldn’t feel distracted or lose focus on
-            the goal for testing.
+            prototype so that they wouldn’t feel distracted or lose focus on the
+            goal for testing.
           </p>
 
           <div class="center-link-wrap">
-            <div class="center-link">
+            <div class="center-link" style="margin: 0 16px">
               <span>
-                <a
-                  href="http://bit.ly/31Pf9YL"
-                  target="_blank"
+                <a href="http://bit.ly/31Pf9YL" target="_blank"
                   >VIEW CLICKABLE PROTOTYPE</a
                 >
               </span>
             </div>
-          </div>
-
-          <div class="center-link-wrap">
-            <div class="center-link">
+            <div class="center-link" style="margin: 0 16px">
               <span>
-                <a
-                  href="http://bit.ly/2pmVLFx"
-                  target="_blank"
+                <a href="http://bit.ly/2pmVLFx" target="_blank"
                   >VIEW USABILITY TEST SCRIPT</a
                 >
               </span>
@@ -526,7 +547,10 @@
             <h1 class="rounded-background">Part IV: Visual Design</h1>
           </div>
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/hifimockup.svg" alt="Window Layout Icon" />
+            <img
+              src="./images/meshi/sectiontitle/hifimockup.svg"
+              alt="Window Layout Icon"
+            />
             <span>High-fidelity Mockups</span>
           </h3>
           <p>
@@ -535,29 +559,47 @@
             screen.
           </p>
 
-          <div class="block-images">
+          <div class="block-images desktop">
             <div>
-              <img desktop src="./images/busybus/busstop1.png" alt="1st iteration" />
-              <span class='caption'>1st Iteration</span>
+              <img
+                desktop
+                src="./images/busybus/busstop1.png"
+                alt="1st iteration"
+              />
+              <span class="caption">1st Iteration</span>
             </div>
             <div>
-              <img desktop src="./images/busybus/busstop2.png" alt="2nd iteration" />
-              <span class='caption'>2nd Iteration</span>
+              <img
+                desktop
+                src="./images/busybus/busstop2.png"
+                alt="2nd iteration"
+              />
+              <span class="caption">2nd Iteration</span>
             </div>
             <div>
-              <img desktop src="./images/busybus/busstop3.png" alt="Final version" />
-              <span class='caption'>Final Version</span>
+              <img
+                desktop
+                src="./images/busybus/busstop3.png"
+                alt="Final version"
+              />
+              <span class="caption">Final Version</span>
             </div>
           </div>
 
-          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop1.png" alt="1st iteration">
-          <h3 class='h3-icon'>1st Iteration</h3>
+          <img
+            class="version-img"
+            mobile
+            style="margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;"
+            src="./images/busybus/busstop1.png"
+            alt="1st iteration"
+          />
+          <h3 class="h3-icon">1st Iteration</h3>
           <p>
             My initial design was... let’s just say it was an “okay” try. I had
-            completely ignored Apple Guidelines and made a bunch of rookie mistakes.
-            I was still in the “as long as it looks cute” designer phase rather
-            than focused on usability.   Design flaws that needed to be corrected
-            in this version were:
+            completely ignored Apple Guidelines and made a bunch of rookie
+            mistakes. I was still in the “as long as it looks cute” designer
+            phase rather than focused on usability.   Design flaws that needed
+            to be corrected in this version were:
           </p>
           <ul>
             <li>
@@ -578,17 +620,22 @@
             </li>
           </ul>
 
-          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop2.png" alt="2nd iteration">
-          <h3 class='h3-icon'>2nd Iteration</h3>
+          <img
+            class="version-img"
+            mobile
+            style="margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;"
+            src="./images/busybus/busstop2.png"
+            alt="2nd iteration"
+          />
+          <h3 class="h3-icon">2nd Iteration</h3>
           <p>
-            The second version was better since I added the title bar and
-            search field on the top part of the screen and an arrow after
-            bus information to avoid any user confusion. In addition to this,
-            the contrast issue in the nav bar was addressed by using a darker
-            shade as a background. I also introduced a new color to the active
-            icon to show the user that they were on that current page within
-            BusyBus. However, I still had a few more issues that I needed to
-            address.
+            The second version was better since I added the title bar and search
+            field on the top part of the screen and an arrow after bus
+            information to avoid any user confusion. In addition to this, the
+            contrast issue in the nav bar was addressed by using a darker shade
+            as a background. I also introduced a new color to the active icon to
+            show the user that they were on that current page within BusyBus.
+            However, I still had a few more issues that I needed to address.
           </p>
           <p>
             Design flaws that needed to be corrected in this version were:
@@ -604,8 +651,14 @@
             </li>
           </ul>
 
-          <img class='version-img' mobile style='margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;' src="./images/busybus/busstop1.png" alt="Final version">
-          <h3 class='h3-icon'>Final Version</h3>
+          <img
+            class="version-img"
+            mobile
+            style="margin-bottom: -40px; max-height: 650px; width: auto; display: block; margin: 0 auto;"
+            src="./images/busybus/busstop1.png"
+            alt="Final version"
+          />
+          <h3 class="h3-icon">Final Version</h3>
           <p>
             My final version had addressed all accessibility issues in terms of
             readability and color. This version was a solution to the current
@@ -614,10 +667,10 @@
 
           <ul>
             <li>
-              Users are able to easily view the location of the next arriving bus
-              that’s within their vicinity on their screen. Bus locations are also
-              properly labeled with their line number so users are never confused
-              as to which direction their bus is coming from
+              Users are able to easily view the location of the next arriving
+              bus that’s within their vicinity on their screen. Bus locations
+              are also properly labeled with their line number so users are
+              never confused as to which direction their bus is coming from
             </li>
             <li>
               Hierarchy is applied to easily see which bus line arrives in a set
@@ -643,9 +696,7 @@
           <div class="center-link-wrap">
             <div class="center-link">
               <span>
-                <a
-                  href="http://bit.ly/31T6ftx"
-                  target="_blank"
+                <a href="http://bit.ly/31T6ftx" target="_blank"
                   >VIEW MOCKUP IN FIGMA</a
                 >
               </span>
@@ -661,7 +712,10 @@
           </div>
 
           <h3 class="h3-icon">
-            <img src="./images/busybus/frontendskills.svg" alt="Frontend Icon" />
+            <img
+              src="./images/busybus/frontendskills.svg"
+              alt="Frontend Icon"
+            />
             <span>Building a Responsive Solution</span>
           </h3>
 
@@ -671,10 +725,9 @@
             the project to Github.
           </p>
 
-          <video class='busy-bus-video' controls>
-            <source src="./images/busybus/busybusdemo.mov" type="video/mp4">
+          <video class="busy-bus-video" controls>
+            <source src="./images/busybus/busybusdemo.mov" type="video/mp4" />
           </video>
-
 
           <div class="view-all-case-studies">
             <span class="plain-invertible">
@@ -683,46 +736,53 @@
               >
             </span>
           </div>
+        </section>
 
-          </section>
+        <hr />
 
-          <hr />
-
-          <section class="wrapup slim">
-            <div class="rounded-b-div">
-              <h1 class="rounded-background">Part VI: Wrapping It All Up!</h1>
-            </div>
+        <section class="wrapup slim">
+          <div class="rounded-b-div">
+            <h1 class="rounded-background">Part VI: Wrapping It All Up!</h1>
+          </div>
 
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/whatilearned.svg" alt="Teacher Icon" />
+            <img
+              src="./images/meshi/sectiontitle/whatilearned.svg"
+              alt="Teacher Icon"
+            />
             <span>What I Learned</span>
           </h3>
           <p>
             This was my first UX project and although it was small and had one
             specific use, I learned that no project is too small to truly
-            understand the needs of potential users and go through the entire
-            UX process.
-          <p>
+            understand the needs of potential users and go through the entire UX
+            process.
+          </p>
+
+          <p></p>
 
           <p>
             Accessibility was also my biggest lesson here. After creating
             different versions, I learned that sizing and color is incredibly
-            important to creating a design that feels inclusive for all types
-            of users.
+            important to creating a design that feels inclusive for all types of
+            users.
           </p>
 
           <p>
             I built a relationship with Apple Guidelines and learned that
-            referring to it wouldn’t just help improve my design but also
-            make coding the solution 10 times easier. As a new designer, it’s
+            referring to it wouldn’t just help improve my design but also make
+            coding the solution 10 times easier. As a new designer, it’s
             tempting to stray from the norm. However, I realized that Apple
-            Guidelines (or any other guidelines) exist for a reason. It makes
-            my designs familiar to users and consistency is key to creating
+            Guidelines (or any other guidelines) exist for a reason. It makes my
+            designs familiar to users and consistency is key to creating
             something that doesn’t make my users have to think.
           </p>
 
           <h3 class="h3-icon">
-            <img src="./images/meshi/sectiontitle/moretime.svg" alt="Clock Icon" />
+            <img
+              src="./images/meshi/sectiontitle/moretime.svg"
+              alt="Clock Icon"
+            />
             <span>If I Had More Time...</span>
           </h3>
           <p>
@@ -742,12 +802,15 @@
         <section class="linking">
           <div class="linking-images">
             <div>
-              <a href="/index.html"><img src="./images/lineart-la.svg" alt="Back Home Image" /></a>
+              <a href="/index.html"
+                ><img src="./images/lineart-la.svg" alt="Back Home Image"
+              /></a>
             </div>
             <div>
-              <a href="/meshi.html"><img
-                style="background: white; object-fit: contain;"
-                src="./images/meshi/meshi1.png"
+              <a href="/meshi.html"
+                ><img
+                  style="background: white; object-fit: contain;"
+                  src="./images/meshi/meshi1.png"
               /></a>
             </div>
           </div>
@@ -764,16 +827,19 @@
         <section class="mobile-linking">
           <div class="linking-text">
             <div class="previous center-link">
-                <a href="/index.html"><img src="./images/meshi/mobile/linkarrowleft.svg" alt="" /></a>
+              <a href="/index.html"
+                ><img src="./images/meshi/mobile/linkarrowleft.svg" alt=""
+              /></a>
               <a href="/index.html">Home</a>
             </div>
             <div class="next center-link">
-                <a href="/meshi.html">Meshi</a>
-              <a href="/meshi.html"><img src="./images/meshi/mobile/linkarrowright.svg" alt="" /></a>
+              <a href="/meshi.html">Meshi</a>
+              <a href="/meshi.html"
+                ><img src="./images/meshi/mobile/linkarrowright.svg" alt=""
+              /></a>
             </div>
           </div>
         </section>
-      </section>
 
         <hr class="contact hr" />
         <section class="contact project">
@@ -788,16 +854,16 @@
                 <a href="./contact.html">CONTACT</a>
               </li>
               <li class="plain-invertible">
-                <a
-                  href="http://bit.ly/2CmbMhS"
-                  target="_blank"
+                <a href="http://bit.ly/2CmbMhS" target="_blank"
                   >DOWNLOAD RESUME</a
                 >
               </li>
             </ul>
             <span class="return-to-top">
               <a href=""
-                ><img src="./images/meshi/homepage/return-top.svg" alt="Return to top"
+                ><img
+                  src="./images/meshi/homepage/return-top.svg"
+                  alt="Return to top"
               /></a>
 
               <a href="#top">Return to top</a>
