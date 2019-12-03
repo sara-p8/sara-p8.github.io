@@ -1603,9 +1603,11 @@ td.center {
 section.branding > img,
 section.branding > .color-swatches > img {
   width: 100%;
+  height: auto;
 }
 .visualdesign > img {
   width: 100%;
+  height: auto;
 }
 
 .typography > span {
