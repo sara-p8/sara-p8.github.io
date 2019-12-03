@@ -16,26 +16,6 @@
       gtag("config", "G-3XKX7QHKHF");
     </script>
 
-    <!-- Optimized image loading -->
-    <script>
-      function loadResponsiveImages() {
-        if (window.innerWidth < 480) {
-          Array.from(document.images).forEach(img => {
-            const src = img.src;
-            if (src.match(/\.(jpg|png)$/)) {
-              img.src = src.replace(/images\/(.*)/, "images/mobile/$1");
-              console.log("UPDATED: ", img.src);
-            }
-            console.log(img.src);
-          });
-        }
-        const images = document.images;
-        console.log(images);
-        window.removeEventListener("load", loadResponsiveImages);
-      }
-
-      // window.addEventListener("load", loadResponsiveImages);
-    </script>
     <title>Sara Papa | UX/UI Designer Portfolio</title>
     <meta
       name="viewport"
@@ -158,8 +138,8 @@
             </ul>
             <p class="text-description" style="max-width: 486px;">
               A cloud storage service that offers a bright and secure space to
-              allow individuals and their teams to create,
-              collaborate and inspire one another.
+              allow individuals and their teams to create, collaborate and
+              inspire one another.
             </p>
             <span class="full-case-study-link">
               <a href="./project.html">View Full Case Study</a> &nbsp;
