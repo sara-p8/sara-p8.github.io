@@ -1477,7 +1477,7 @@ section.lessons > ol {
 
 .down-border {
   position: absolute;
-  border: 3px dashed #bba7a1;
+  border: 1px dashed #bba7a1;
   z-index: -1;
   width: 100%;
   left: -8px;
